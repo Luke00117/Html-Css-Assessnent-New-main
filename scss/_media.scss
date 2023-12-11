@@ -20,8 +20,12 @@
 
 @media (max-width: 767px) {
 
+    .container {
+        width: 100%;
+    }
+
     .main-logo {
-        width: 60%;
+        max-width: 402px;
     }
 
     .hidden-md {
