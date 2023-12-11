@@ -1,0 +1,256 @@
+// ==========================================================================
+// Navigation styling
+// ==========================================================================
+
+.nav-container {
+    background-color: #333645;
+    position: relative;
+}
+
+.nav-container ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav-container ul a {
+    color: #fff;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 20px 0;
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-item a {
+    font-size: 1.2rem;
+    position: relative;
+}
+
+
+.nav-item a.display {
+    text-transform: uppercase;
+    display: block;
+}
+
+
+.nav-item a small {
+    font-size: .7rem;
+}
+
+.main-nav-icon-container {
+    display: block;
+    text-align: center;
+}
+
+.nav-item small {
+    display: block;
+}
+
+
+.nav-menu-drop-down {
+    display: none;
+}
+
+
+.drop-down-item .nav-icon-container {
+    padding-right: 5px;
+}
+
+.nav-menu-drop-down {
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    display: none;
+    min-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #333645;
+    justify-content: center;
+
+}
+
+.nav-item:hover {
+    .nav-menu-drop-down {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.nav-menu-drop-down ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-menu-drop-down ul li {
+    width: 33%;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.nav-menu-drop-down>.drop-down-menu>.drop-down-title {
+    display: block;
+    min-width: 100%;
+    padding: 15px 0 10px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.nav-container>ul>.nav-item:hover>a:before,
+.nav-container>ul>li:hover>a:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -55px;
+    z-index: 90;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: translateX(-50%);
+    border-width: 35px 83.5px 0;
+    border-color: #007bff transparent transparent;
+}
+
+.nav-container>.nav-item.item-1:hover a:before,
+.nav-container>ul>li.item-1:hover a:before {
+    border-color: #67809f transparent transparent;
+}
+
+
+// ==========================================================================
+// Nav Colors
+// ==========================================================================
+
+//Software colors
+.nav-item.item-1:hover {
+    background-color: #67809f;
+}
+
+.software-icon {
+    color: #67809f;
+}
+
+.nav-item.item-1:hover .software-icon {
+    color: #fff;
+}
+
+.nav-item.item-1:hover .nav-menu-drop-down {
+    background-color: #526781;
+}
+
+// IT colors
+.nav-item.item-2:hover {
+    background-color: #4183d7;
+}
+
+.it-icon {
+    color: #4183d7;
+}
+
+.nav-item.item-2:hover .it-icon {
+    color: #fff;
+}
+
+.nav-item.item-2:hover .nav-menu-drop-down {
+    background-color: #286abd;
+}
+
+// Digital Colors
+.nav-item.item-3:hover {
+    background-color: #2ecc71;
+}
+
+.digital-icon {
+    color: #2ecc71;
+}
+
+.nav-item.item-3:hover .digital-icon {
+    color: #fff;
+}
+
+.nav-item.item-3:hover .nav-menu-drop-down {
+    background-color: #25a25a;
+}
+
+// Telecoms colors
+.nav-item.item-4:hover {
+    background-color: #d64541;
+}
+
+.telecoms-icon {
+    color: #d64541;
+}
+
+.nav-item.item-4:hover .telecoms-icon {
+    color: #fff;
+}
+
+.nav-item.item-4:hover .nav-menu-drop-down {
+    background-color: #bc2c28;
+}
+
+
+// Web colors
+.nav-item.item-5:hover {
+    background-color: #926fb1;
+}
+
+.web-icon {
+    color: #926fb1;
+}
+
+.nav-item.item-5:hover .web-icon {
+    color: #fff;
+}
+
+.nav-item.item-5:hover .nav-menu-drop-down {
+    background-color: #79539a;
+}
+
+// Cyber colors
+.nav-item.item-6:hover {
+    background-color: #f62459;
+}
+
+.cyber-icon {
+    color: #f62459;
+}
+
+.nav-item.item-6:hover .cyber-icon {
+    color: #fff;
+}
+
+.nav-item.item-6:hover .nav-menu-drop-down {
+    background-color: #de093f;
+}
+
+
+// Developer colors
+.nav-item.item-7:hover {
+    background-color: #ce4125;
+}
+
+.developer-icon {
+    color: #ce4125;
+}
+
+.nav-item.item-7:hover .developer-icon {
+    color: #fff;
+}
+
+.nav-item.item-7:hover .nav-menu-drop-down {
+    background-color: #a3331d;
+}

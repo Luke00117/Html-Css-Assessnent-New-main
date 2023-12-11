@@ -33,6 +33,7 @@ p {
   color: #fff;
   border-radius: 5px;
   background-color: #333645;
+  cursor: pointer;
 }
 
 #container {
@@ -873,10 +874,24 @@ header .container {
   justify-content: space-between;
 }
 
+.client-image-container {
+  padding: 0 20px;
+}
+
 .client-image-container img {
   max-width: 100%;
-  height: autoe;
+  height: auto;
   object-fit: cover;
+}
+
+.hover-box {
+  display: none;
+  position: absolute;
+}
+
+.hover-box:hover {
+  display: block;
+  background-color: #2ecc71;
 }
 
 .newsletter-container {

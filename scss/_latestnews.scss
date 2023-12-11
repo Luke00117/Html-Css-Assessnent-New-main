@@ -1,0 +1,149 @@
+// ==========================================================================
+// News Section Styling
+// ==========================================================================
+
+.news-title-card {
+    color: #333645;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+
+.news-card {
+    width: 100%;
+    color: #333645;
+    font-size: .85rem;
+    margin-bottom: 30px;
+    position: relative;
+    border: 1px solid lightgrey;
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, .1);
+}
+
+.btn-news {
+    background-color: #4183d7;
+    position: absolute;
+    right: 0;
+    z-index: 4;
+    padding: 5px 10px;
+    margin-top: 15px;
+}
+
+.btn-insights {
+    background-color: #d64541;
+}
+
+
+.news-card p {
+    color: #666;
+    font-size: .85rem;
+    line-height: 1.4rem;
+}
+
+
+.btn-read-more {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.poster-info {
+    border-top: 1px solid lightgrey;
+    padding-top: 25px;
+}
+
+.read-time {
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: rgba(51, 54, 69, .5);
+}
+
+.news-card-content {
+    padding: 20px;
+}
+
+.news-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.logo-small {
+    float: left;
+    margin-right: 15px;
+}
+
+
+.news-card .poster-info .logo-text-bold {
+    font-weight: 600;
+    font-size: .9rem;
+    color: #333645;
+    margin-bottom: 0px;
+}
+
+.news-section .container {
+    display: flex;
+    flex-direction: column;
+}
+
+// ==========================================================================
+// News Card Colors Styling
+// ==========================================================================
+.news-card h3 {
+    color: #4183d7;
+    padding-bottom: 20px;
+}
+
+.news-1 .btn {
+    background-color: #4183d7;
+}
+
+.news-2 h3 {
+    color: #d64541
+}
+
+.news-2 .btn {
+    background-color: #d64541
+}
+
+.news-3 h3 {
+    color: #2ecc71;
+}
+
+.news-3 .btn {
+    background-color: #2ecc71;
+}
+
+// ==========================================================================
+// Client Image Styling
+// ==========================================================================
+
+.client-image-block {
+    margin-top: 50px;
+}
+
+.client-image-sleeve {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-image-container {
+    padding: 0 20px;
+}
+
+.client-image-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hover-box {
+    display: none;
+    position: absolute;
+}
+
+.hover-box:hover {
+    display: block;
+    background-color: #2ecc71;
+}
