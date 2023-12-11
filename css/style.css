@@ -248,8 +248,13 @@ header .container {
 }
 
 .nav-item a {
-  font-size: 1.2rem;
+  line-height: 1;
+  font-size: 1.125rem;
   position: relative;
+}
+
+.nav-item a span {
+  font-size: 1.438rem;
 }
 
 .nav-item a.display {
@@ -1174,6 +1179,12 @@ footer .container {
   }
 }
 @media (min-width: 992px) {
+  .main-logo {
+    margin-left: 10px;
+  }
+  .hamburger-box {
+    margin-right: 15px;
+  }
   .container {
     width: 970px;
   }

@@ -28,8 +28,13 @@
 }
 
 .nav-item a {
-    font-size: 1.2rem;
+    line-height: 1;
+    font-size: 1.125rem;
     position: relative;
+}
+
+.nav-item a span {
+    font-size: 1.438rem;
 }
 
 
