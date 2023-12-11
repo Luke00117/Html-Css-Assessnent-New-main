@@ -1,0 +1,223 @@
+// ==========================================================================
+// Service Cards Styling
+// ==========================================================================
+
+
+.service-block {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.service-title-card {
+    display: flex;
+    width: 100%;
+    color: #333645;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.service-title-card h2 {
+    margin-left: 20px;
+    margin-right: auto;
+    font-size: 2.5rem;
+}
+
+.service-title-card h3 {
+    font-size: 1.6rem;
+    margin-right: 20px;
+}
+
+.service-card {
+    margin-top: 15px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, .1);
+}
+
+
+
+.service-card span.icon-container {
+    color: #fff;
+    padding: 15px;
+    font-size: 1.5rem;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #333645;
+    display: inline-block;
+}
+
+.service-card h2 {
+    color: #333645;
+    font-weight: 400;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #333645;
+    font-size: 0.9rem;
+    line-height: 1.375rem;
+}
+
+.service-block .service-card:hover {
+    top: -10px;
+}
+
+.service-card:hover h2,
+.service-card:hover p {
+    color: #fff !important;
+}
+
+
+// ==========================================================================
+// Service Card Color Styling
+// ==========================================================================
+
+// Software Card Styles
+.service-card>.software-card>.icon-container.software-icon,
+.service-card .software-card .btn {
+    background-color: #67809f !important;
+}
+
+.card-1:hover {
+    background-color: #67809f !important;
+}
+
+.card-1:hover .icon-container.software-icon,
+.card-1:hover .btn {
+    color: #67809f;
+    background-color: #fff !important;
+}
+
+// IT Card Colors
+.service-card>.it-card>.icon-container.it-icon,
+.service-card .it-card .btn {
+    background-color: #4183d7 !important;
+}
+
+.card-2:hover {
+    background-color: #4183d7 !important;
+}
+
+.card-2:hover .icon-container.it-icon,
+.card-2:hover .btn {
+    color: #4183d7;
+    background-color: #fff !important;
+}
+
+
+// Digital Card Colors
+.service-card>.digital-card>.icon-container.digital-icon,
+.service-card .digital-card .btn {
+    background-color: #2ecc71 !important;
+}
+
+.card-3:hover {
+    background-color: #2ecc71 !important;
+}
+
+.card-3:hover .icon-container.digital-icon,
+.card-3:hover .btn {
+    color: #2ecc71;
+    background-color: #fff !important;
+}
+
+// Telecoms Card Colors
+.service-card>.telecoms-card>.icon-container.telecoms-icon,
+.service-card .telecoms-card .btn {
+    background-color: #d64541 !important;
+}
+
+.card-4:hover {
+    background-color: #d64541 !important;
+}
+
+.card-4:hover .icon-container.telecoms-icon,
+.card-4:hover .btn {
+    color: #d64541;
+    background-color: #fff !important;
+}
+
+// Web Card Colors
+.service-card>.web-card>.icon-container.web-icon,
+.service-card .web-card .btn {
+    background-color: #926fb1 !important;
+}
+
+.card-5:hover {
+    background-color: #926fb1 !important;
+}
+
+.card-5:hover .icon-container.web-icon,
+.card-5:hover .btn {
+    color: #926fb1;
+    background-color: #fff !important;
+}
+
+// Cyber Sec Card Colors
+.service-card>.cyber-card>.icon-container.cyber-icon,
+.service-card .cyber-card .btn {
+    background-color: #f62459 !important;
+}
+
+.card-6:hover {
+    background-color: #f62459 !important;
+}
+
+.card-6:hover .icon-container.cyber-icon,
+.card-6:hover .btn {
+    color: #f62459;
+    background-color: #fff !important;
+}
+
+// Dev Course Card Colors
+.service-card>.developer-card>.icon-container.developer-icon,
+.service-card .developer-card .btn {
+    background-color: #ce4125 !important;
+}
+
+.card-7:hover {
+    background-color: #ce4125 !important;
+}
+
+.card-7:hover .icon-container.developer-icon,
+.card-7:hover .btn {
+    color: #ce4125;
+    background-color: #fff !important;
+}
+
+// ==========================================================================
+// Award Styling
+// ==========================================================================
+
+.award-block {
+    margin-top: 50px;
+}
+
+
+.award-sleeve {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.greyscale {
+    filter: grayscale(1);
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.greyscale:hover {
+    filter: grayscale(0);
+}
