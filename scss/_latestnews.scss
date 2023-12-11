@@ -14,6 +14,7 @@
 
 .news-card {
     width: 100%;
+    cursor: pointer;
     color: #333645;
     font-size: .85rem;
     margin-bottom: 30px;
@@ -141,33 +142,9 @@
 .hover-box {
     display: none;
     position: absolute;
-}
-
-.hover-box:hover {
-    display: block;
     background-color: #2ecc71;
 }
 
-.client-image-container {
-    position: relative;
-    display: inline-block;
-}
-
-.hover-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    /* Adjust background color and opacity as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
 .client-image-container:hover .hover-box {
-    opacity: 1;
+    display: block;
 }

@@ -126,13 +126,6 @@
         width: 970px;
     }
 
-    .main-logo {
-        width: 35%;
-    }
-
-    .search-functions {
-        width: 60%;
-    }
 
     .banner-text {
         justify-content: left;
@@ -215,7 +208,15 @@
 
 @media (min-width: 1024px) {
     .container {
-        width: 1000px;
+        width: 990px;
+    }
+}
+
+@media (max-width: 1259px) {
+
+    .nav-container>.container>ul>.nav-item:hover>a:before,
+    .nav-container>.container>ul>li:hover>a:before {
+        border-width: 35px 68.5px 0;
     }
 }
 
@@ -232,6 +233,11 @@
 @media (min-width: 1280px) {
     .container {
         width: 1200px;
+    }
+
+    .search-container .icon-box {
+        margin-left: -5px;
+        border-radius: 0 3px 3px 0;
     }
 
     .card-1,
