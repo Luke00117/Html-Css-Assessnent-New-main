@@ -1223,15 +1223,19 @@ header .container {
   outline: none;
 }
 
-.marketing-check input {
+.marketing-check .checkbox-fake {
   align-self: flex-start;
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 35px;
   margin-right: 15px;
   border-radius: 3px;
   background-color: #ddd;
   border: 3px solid #333645;
   cursor: pointer;
+}
+
+.marketing-check input[type=checkbox] {
+  display: none;
 }
 
 .marketing-text {
