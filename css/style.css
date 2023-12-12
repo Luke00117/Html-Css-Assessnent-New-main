@@ -595,6 +595,7 @@ header .container {
   border-radius: 3px;
   line-height: 50px;
   padding: 5px 20px;
+  margin: 30px 0 20px;
 }
 
 .service-block {
@@ -640,12 +641,21 @@ header .container {
 
 .service-card span.icon-container {
   color: #fff;
-  padding: 15px;
-  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  width: 65px;
+  line-height: 62px;
+  font-size: 2rem;
   margin: 0 auto 20px;
   border-radius: 50%;
   background-color: #333645;
   display: inline-block;
+}
+
+.service-card span.icon-container i {
+  text-align: center;
+  justify-self: center;
 }
 
 .service-card h2 {
@@ -1020,6 +1030,20 @@ header .container {
   margin: 0 auto 50px;
 }
 
+.client-image-container:hover .hover-box:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  z-index: 90;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  transform: translateX(-50%);
+  border-width: 35px 36px 0;
+  border-color: #333645 transparent transparent;
+}
+
 .hover-box h3 {
   font-size: 1.125rem;
   padding-bottom: 20px;
@@ -1031,7 +1055,7 @@ header .container {
 }
 
 .hover-box p {
-  font-size: 0.8125ren;
+  font-size: 0.8125rem;
 }
 
 .hover-btn {
@@ -1114,8 +1138,8 @@ header .container {
 
 .btn.btn-submit {
   border: none;
-  padding: 15px;
-  font-size: 1rem;
+  padding: 5px 15px;
+  font-size: 1.1rem;
   margin-bottom: 40px;
 }
 
@@ -1291,6 +1315,7 @@ footer .container {
   }
   .banner-text h1 {
     font-size: 4rem;
+    line-height: 5rem;
   }
   .banner-text p {
     font-size: 1.625rem;
@@ -1375,7 +1400,7 @@ footer .container {
   .card-5,
   .card-6,
   .card-7 {
-    width: 24%;
+    width: 23.5%;
   }
   .news-card {
     width: 32%;

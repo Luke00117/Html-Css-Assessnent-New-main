@@ -153,6 +153,20 @@
     margin: 0 auto 50px;
 }
 
+.client-image-container:hover .hover-box:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    z-index: 90;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: translateX(-50%);
+    border-width: 35px 36px 0;
+    border-color: #333645 transparent transparent;
+}
+
 .hover-box h3 {
     font-size: 1.125rem;
     padding-bottom: 20px;
@@ -164,7 +178,7 @@
 }
 
 .hover-box p {
-    font-size: .8125ren;
+    font-size: .8125rem;
 }
 
 .hover-btn {
