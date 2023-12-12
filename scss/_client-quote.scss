@@ -45,6 +45,10 @@
     font-size: 45px;
 }
 
+.star-icon-box:not(:first-child) {
+    margin-left: 2px;
+}
+
 .client-quote {
     font-weight: 600;
     font-size: 1.5rem;
@@ -68,11 +72,23 @@
     margin: 5px;
 }
 
+.info-banner .btn:hover {
+    background-color: #121318;
+}
+
 .btn.quote-btn.google-btn {
     background-color: #4387f6;
     margin-right: 10px;
 }
 
+.btn.quote-btn.google-btn:hover {
+    background-color: #166af4;
+}
+
 .btn.quote-btn.trustpilot-btn {
     background-color: #00b67b;
+}
+
+.btn.quote-btn.trustpilot-btn:hover {
+    background-color: #009b69;
 }

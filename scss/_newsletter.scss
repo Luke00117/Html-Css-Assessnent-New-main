@@ -10,7 +10,7 @@
 }
 
 .form-title {
-    font-size: 2.1rem;
+    font-size: 2rem;
     font-weight: 400;
     padding-top: 40px;
     padding-bottom: 20px;
@@ -27,6 +27,11 @@
     padding-bottom: 5px;
 }
 
+.form-input .input-box label::after {
+    content: " *";
+    color: #d24d57;
+}
+
 .form-input input {
     width: 100%;
     padding: 10px;
@@ -40,6 +45,8 @@
     align-items: center;
     vertical-align: middle;
     cursor: pointer;
+    outline: none;
+    box-shadow: null;
 }
 
 .marketing-check input {
@@ -52,7 +59,6 @@
     border: 3px solid #333645;
     cursor: pointer;
 }
-
 
 .marketing-text {
     font-weight: bold;
@@ -68,4 +74,8 @@
     padding: 5px 15px;
     font-size: 1.1rem;
     margin-bottom: 40px;
+}
+
+.btn.btn-submit:hover {
+    background-color: #22242e;
 }

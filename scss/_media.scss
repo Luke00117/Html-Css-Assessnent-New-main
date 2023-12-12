@@ -52,6 +52,10 @@
         padding: 30px 10px;
     }
 
+    .service-card {
+        width: 100% !important;
+    }
+
     .news-view-sm {
         width: 100%;
         justify-content: center;
@@ -89,7 +93,7 @@
     }
 
     .news-card {
-        width: 48%;
+        width: 47%;
     }
 
     .news-3 {
@@ -127,6 +131,13 @@
 
     .banner-img {
         opacity: .5;
+    }
+
+    .card-4,
+    .card-5,
+    .card-6,
+    .card-7 {
+        width: 49%;
     }
 
 }
@@ -196,7 +207,7 @@
     .card-5,
     .card-6,
     .card-7 {
-        width: 48%;
+        width: 49%;
     }
 
 
@@ -280,7 +291,7 @@
 
 
     .news-card {
-        width: 32%;
+        width: 31%;
     }
 
     .news-3 {

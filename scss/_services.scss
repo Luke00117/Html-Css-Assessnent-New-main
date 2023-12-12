@@ -227,17 +227,30 @@
 
 
 .award-sleeve {
+    overflow-x: clip;
     display: flex;
+    position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
-    flex-direction: row;
     justify-content: space-between;
+}
+
+.award-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 20px;
+    height: 70px;
+    width: 100%;
 }
 
 .greyscale {
     filter: grayscale(1);
-    max-width: 100%;
+    width: auto;
     height: auto;
+    max-height: 70px;
+    max-width: 200px;
     object-fit: cover;
 }
 

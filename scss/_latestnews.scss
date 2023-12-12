@@ -119,7 +119,8 @@
     color: #2ecc71;
 }
 
-.news-3 .btn {
+.news-3 .btn,
+.news-3 .btn-news {
     background-color: #2ecc71;
 }
 
@@ -133,17 +134,33 @@
 
 .client-image-sleeve {
     display: flex;
+    overflow-x: clip;
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
     justify-content: space-between;
 }
 
 .client-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     padding: 0 20px;
+    height: 70px;
+    width: 100%;
 }
 
+.client-image-container picture {
+    align-items: center;
+}
+
+
 .client-image-container img {
-    max-width: 100%;
+    width: auto;
     height: auto;
+    max-height: 70px;
+    max-width: 200px;
     object-fit: cover;
 }
 
@@ -152,6 +169,7 @@
     bottom: 100%;
     left: -200px;
     right: -200px;
+    z-index: 4;
     display: none;
     background-color: #333645;
     padding: 20px;
@@ -186,6 +204,8 @@
 
 .hover-box p {
     font-size: .8125rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .hover-btn {
@@ -198,10 +218,27 @@
     background-color: #2ecc71;
 }
 
+.btn-green:hover {
+    background-color: #009b69;
+}
+
 .btn-purp {
     background-color: #926fb1;
 }
 
-.client-image-container:hover .hover-box {
+.btn-purp:hover {
+    background-color: #7e57a0;
+}
+
+.btn-blue {
+    background-color: #67809f;
+}
+
+.btn-blue:hover {
+    background-color: #566c88;
+}
+
+.client-image-container:hover .hover-box,
+.client-image-container img:hover .hover-box {
     display: block;
 }

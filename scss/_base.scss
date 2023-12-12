@@ -13,6 +13,10 @@ p {
     margin-bottom: 25px;
 }
 
+img {
+    vertical-align: middle;
+}
+
 
 #container {
     margin-left: auto;
@@ -20,6 +24,7 @@ p {
 }
 
 .container {
+    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;

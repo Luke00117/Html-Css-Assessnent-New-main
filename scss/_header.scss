@@ -22,17 +22,6 @@
     width: 175px;
 }
 
-#ipad-search:focus {
-    outline: none;
-}
-
-input:focus,
-.search-bar:focus,
-#ipad-search:focus {
-    outline: none;
-    border-color: #5bc0de;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .75), 0 0 8px rgba(91, 192, 222, .6);
-}
 
 .search-bar-mobile form {
     position: relative;
@@ -162,6 +151,12 @@ input:focus,
     margin-left: 20px;
 }
 
+
+
+.search-container .search-btn:hover .icon-box {
+    background-color: #7e808a;
+}
+
 .search-functions .phone {
     color: #333645;
     font-size: 24px;
@@ -177,6 +172,10 @@ input:focus,
     padding: 5px 15px;
     margin-left: 20px;
     background-color: #333645;
+}
+
+.hamburger-box:hover {
+    background-color: #22242e;
 }
 
 .bar {
