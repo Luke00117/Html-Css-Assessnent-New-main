@@ -20,8 +20,12 @@
 
 @media (max-width: 767px) {
 
+    .container {
+        width: 100%;
+    }
+
     .main-logo {
-        width: 60%;
+        max-width: 402px;
     }
 
     .hidden-md {
@@ -46,6 +50,10 @@
         color: #333645;
         font-size: 1.5rem;
         padding: 30px 10px;
+    }
+
+    .service-card {
+        width: 100% !important;
     }
 
     .news-view-sm {
@@ -85,7 +93,7 @@
     }
 
     .news-card {
-        width: 48%;
+        width: 47%;
     }
 
     .news-3 {
@@ -115,6 +123,23 @@
     .hidden-md {
         display: none;
     }
+
+    .search-container .icon-box {
+        border-radius: 0 3px 3px 0;
+        margin-left: 0;
+    }
+
+    .banner-img {
+        opacity: .5;
+    }
+
+    .card-4,
+    .card-5,
+    .card-6,
+    .card-7 {
+        width: 49%;
+    }
+
 }
 
 
@@ -122,17 +147,22 @@
 
 
 @media (min-width: 992px) {
+
+    .main-logo {
+        margin-left: 10px;
+    }
+
+
+    .hidden-desktop {
+        display: none !important;
+    }
+
+
+
     .container {
         width: 970px;
     }
 
-    .main-logo {
-        width: 35%;
-    }
-
-    .search-functions {
-        width: 60%;
-    }
 
     .banner-text {
         justify-content: left;
@@ -142,16 +172,19 @@
 
     .banner-text h1 {
         font-size: 4rem;
+        line-height: 5rem;
     }
 
     .banner-text p {
-        font-size: 1.7rem;
+        font-size: 1.625rem;
+        line-height: 2.5rem
     }
 
 
     .hidden-lg {
         display: none;
     }
+
 
     .banner-img:before {
         content: "";
@@ -174,7 +207,7 @@
     .card-5,
     .card-6,
     .card-7 {
-        width: 48%;
+        width: 49%;
     }
 
 
@@ -188,10 +221,6 @@
 
     .client-feedback {
         padding-left: 30px;
-    }
-
-    .net-info .info-btn-container .info-btn {
-        margin-bottom: 50px;
     }
 
     .newsletter-signup .form-input {
@@ -215,7 +244,15 @@
 
 @media (min-width: 1024px) {
     .container {
-        width: 1000px;
+        width: 990px;
+    }
+}
+
+@media (max-width: 1259px) {
+
+    .nav-container>.container>ul>.nav-item:hover>a:before,
+    .nav-container>.container>ul>li:hover>a:before {
+        border-width: 35px 68.5px 0;
     }
 }
 
@@ -234,6 +271,11 @@
         width: 1200px;
     }
 
+    .search-container .icon-box {
+        margin-left: -5px;
+        border-radius: 0 3px 3px 0;
+    }
+
     .card-1,
     .card-2,
     .card-3 {
@@ -244,11 +286,12 @@
     .card-5,
     .card-6,
     .card-7 {
-        width: 24%;
+        width: 23.5%;
     }
 
+
     .news-card {
-        width: 32%;
+        width: 31%;
     }
 
     .news-3 {

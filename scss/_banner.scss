@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-color: #000;
 }
 
 .banner-img {
@@ -48,23 +50,20 @@
 }
 
 .banner-text {
-    padding: 0 20px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
 .banner-text h1 {
+    padding-right: 20px;
     font-size: 2.5rem;
+    line-height: 3rem;
+    margin-top: 0;
 }
 
 .banner-text p {
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-.btn.banner-btn {
-    background-color: #926fb1;
-    align-self: left;
 }

@@ -1,0 +1,214 @@
+.view-link {
+    text-decoration: none;
+    color: #333645;
+}
+
+.view-link:hover {
+    text-decoration: underline;
+}
+
+
+.btn {
+    display: inline-block;
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #333645;
+    cursor: pointer;
+}
+
+
+
+// ==========================================================================
+// Header Buttons Styling
+// ==========================================================================
+
+.btn-container {
+    float: left;
+}
+
+
+.searchbar-btn.btn-support {
+    background-color: #4183d7;
+    margin-right: -5px;
+}
+
+.searchbar-btn.btn-support:hover {
+    background-color: #2a6ec6;
+    margin-right: -5px;
+}
+
+.searchbar-btn.btn-contact {
+    background-color: #999aa2;
+    margin-left: 20px;
+}
+
+.searchbar-btn.btn-contact:hover {
+    background-color: #84858f;
+    margin-left: 20px;
+}
+
+#ipad-search:focus {
+    outline: none;
+}
+
+.search-bar:focus,
+#ipad-search:focus,
+.newsletter-signup .form-input input:focus {
+    outline: none;
+    border-color: #5bc0de;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .75), 0 0 8px rgba(91, 192, 222, .6);
+}
+
+
+// ==========================================================================
+// Banner Button Styling
+// ==========================================================================
+
+.btn.banner-btn {
+    background-color: #926fb1;
+    font-size: 1.25rem;
+    border-radius: 3px;
+    line-height: 50px;
+    padding: 5px 20px;
+    margin: 30px 0 20px;
+}
+
+.btn.banner-btn:hover {
+    background-color: #7e57a0;
+}
+
+
+
+// ==========================================================================
+// Services Button Styling
+// ==========================================================================
+
+
+.btn.read-more {
+    margin-top: 0;
+    font-size: 1.1rem;
+    line-height: 35px;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+
+// ==========================================================================
+// Client Button Styling
+// ==========================================================================
+
+.info-btn-container a.btn.info-btn:nth-child(2) {
+    margin-bottom: 50px;
+}
+
+.info-banner .btn {
+    color: #fff;
+    background-color: #272936;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.info-banner .btn:hover {
+    background-color: #121318;
+}
+
+.btn.quote-btn.google-btn {
+    background-color: #4387f6;
+    margin-right: 10px;
+}
+
+.btn.quote-btn.google-btn:hover {
+    background-color: #166af4;
+}
+
+.btn.quote-btn.trustpilot-btn {
+    background-color: #00b67b;
+}
+
+.btn.quote-btn.trustpilot-btn:hover {
+    background-color: #009b69;
+}
+
+
+
+// ==========================================================================
+// News Card Button Styling
+// ==========================================================================
+
+
+.btn-news {
+    background-color: #4183d7;
+    position: absolute;
+    right: 0;
+    z-index: 4;
+    padding: 5px 10px;
+    margin-top: 15px;
+}
+
+.btn-insights {
+    background-color: #d64541;
+}
+
+.news-1 .btn {
+    background-color: #4183d7;
+}
+
+
+.news-2 .btn {
+    background-color: #d64541
+}
+
+.news-3 h3 {
+    color: #2ecc71;
+}
+
+.news-3 .btn,
+.news-3 .btn-news {
+    background-color: #2ecc71;
+}
+
+.btn-green {
+    background-color: #2ecc71;
+}
+
+.btn-green:hover {
+    background-color: #009b69;
+}
+
+.btn-purp {
+    background-color: #926fb1;
+}
+
+.btn-purp:hover {
+    background-color: #7e57a0;
+}
+
+.btn-blue {
+    background-color: #67809f;
+}
+
+.btn-blue:hover {
+    background-color: #566c88;
+}
+
+
+// ==========================================================================
+// Newslette Button Styling
+// ==========================================================================
+
+.btn.btn-submit {
+    border: none;
+    padding: 5px 15px;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.btn.btn-submit:hover {
+    background-color: #22242e;
+}

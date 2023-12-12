@@ -6,6 +6,10 @@ footer {
     background-color: #323544;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
+
 .logo-container {
     width: 250px;
     padding-top: 30px;
@@ -27,7 +31,33 @@ footer {
     flex-wrap: wrap;
 }
 
+.container .social-block .social-icon-box a {
+    text-decoration: none;
+}
 
+.social-icon-box a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 70px;
+}
+
+.facebook-icon:hover {
+    background-color: #3b5998;
+}
+
+.linked-in-icon:hover {
+    background-color: #0077b5;
+}
+
+.twitter-icon:hover {
+    background-color: #00aced;
+}
+
+.instagram-icon:hover {
+    background-color: #d93175;
+}
 
 
 .social-icon {
@@ -48,7 +78,8 @@ footer {
 
 .footer-links li {
     font-weight: 300;
-    font-size: .8rem;
+    font-size: .8125rem;
+    line-height: 1rem;
     padding-bottom: 5px;
 }
 

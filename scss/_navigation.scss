@@ -11,7 +11,6 @@
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
 }
 
 
@@ -22,14 +21,20 @@
 }
 
 .nav-item {
-    padding: 20px 0;
+    padding: 19px 0 18px;
     justify-content: center;
     flex: 1;
+    border-bottom: none;
 }
 
 .nav-item a {
-    font-size: 1.2rem;
+    line-height: 1;
+    font-size: 1.125rem;
     position: relative;
+}
+
+.nav-item a span {
+    font-size: 1.438rem;
 }
 
 
@@ -40,12 +45,14 @@
 
 
 .nav-item a small {
-    font-size: .7rem;
+    font-size: .625rem;
 }
 
 .main-nav-icon-container {
     display: block;
     text-align: center;
+    line-height: 1.438rem;
+    padding-bottom: 10px;
 }
 
 .nav-item small {
@@ -60,6 +67,10 @@
 
 .drop-down-item .nav-icon-container {
     padding-right: 5px;
+}
+
+.drop-down-menu a:hover {
+    text-decoration: underline;
 }
 
 .nav-menu-drop-down {
@@ -109,12 +120,12 @@
     font-weight: 400;
 }
 
-.nav-container>ul>.nav-item:hover>a:before,
-.nav-container>ul>li:hover>a:before {
+.nav-container>.container>ul>.nav-item:hover>a:before,
+.nav-container>.container>ul>li:hover>a:before {
     content: "";
     position: absolute;
     left: 50%;
-    bottom: -55px;
+    bottom: -52.5px;
     z-index: 90;
     width: 0;
     height: 0;
@@ -124,10 +135,6 @@
     border-color: #007bff transparent transparent;
 }
 
-.nav-container>.nav-item.item-1:hover a:before,
-.nav-container>ul>li.item-1:hover a:before {
-    border-color: #67809f transparent transparent;
-}
 
 
 // ==========================================================================
@@ -151,6 +158,11 @@
     background-color: #526781;
 }
 
+.nav-container>.container>ul>.nav-item.item-1:hover>a:before {
+    border-color: #67809f transparent transparent;
+}
+
+
 // IT colors
 .nav-item.item-2:hover {
     background-color: #4183d7;
@@ -167,6 +179,11 @@
 .nav-item.item-2:hover .nav-menu-drop-down {
     background-color: #286abd;
 }
+
+.nav-container>.container>ul>.nav-item.item-2:hover>a:before {
+    border-color: #4183d7 transparent transparent;
+}
+
 
 // Digital Colors
 .nav-item.item-3:hover {
@@ -185,6 +202,11 @@
     background-color: #25a25a;
 }
 
+.nav-container>.container>ul>.nav-item.item-3:hover>a:before {
+    border-color: #2ecc71 transparent transparent;
+}
+
+
 // Telecoms colors
 .nav-item.item-4:hover {
     background-color: #d64541;
@@ -200,6 +222,10 @@
 
 .nav-item.item-4:hover .nav-menu-drop-down {
     background-color: #bc2c28;
+}
+
+.nav-container>.container>ul>.nav-item.item-4:hover>a:before {
+    border-color: #d64541 transparent transparent;
 }
 
 
@@ -220,6 +246,11 @@
     background-color: #79539a;
 }
 
+.nav-container>.container>ul>.nav-item.item-5:hover>a:before {
+    border-color: #926fb1 transparent transparent;
+}
+
+
 // Cyber colors
 .nav-item.item-6:hover {
     background-color: #f62459;
@@ -235,6 +266,10 @@
 
 .nav-item.item-6:hover .nav-menu-drop-down {
     background-color: #de093f;
+}
+
+.nav-container>.container>ul>.nav-item.item-6:hover>a:before {
+    border-color: #f62459 transparent transparent;
 }
 
 
@@ -253,4 +288,8 @@
 
 .nav-item.item-7:hover .nav-menu-drop-down {
     background-color: #a3331d;
+}
+
+.nav-container>.container>ul>.nav-item.item-7:hover>a:before {
+    border-color: #ce4125 transparent transparent;
 }

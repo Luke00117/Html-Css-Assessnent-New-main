@@ -13,19 +13,10 @@ p {
     margin-bottom: 25px;
 }
 
-
-
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 15px 20px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 5px;
-    background-color: #333645;
-    cursor: pointer;
+img {
+    vertical-align: middle;
 }
+
 
 #container {
     margin-left: auto;
@@ -54,4 +45,9 @@ ul {
 a {
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+    font-size: 14px;
 }
