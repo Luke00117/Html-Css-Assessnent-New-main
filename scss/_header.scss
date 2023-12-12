@@ -13,6 +13,27 @@
 
 }
 
+
+#ipad-search {
+    display: block;
+    height: 56px;
+    line-height: 46px;
+    border: 1px solid #ccc;
+    width: 175px;
+}
+
+#ipad-search:focus {
+    outline: none;
+}
+
+input:focus,
+.search-bar:focus,
+#ipad-search:focus {
+    outline: none;
+    border-color: #5bc0de;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .75), 0 0 8px rgba(91, 192, 222, .6);
+}
+
 .search-bar-mobile form {
     position: relative;
 }
@@ -20,12 +41,13 @@
 .search-bar-mobile form input {
     width: 100%;
     height: 47px;
+    outline: none;
+    box-shadow: none;
     margin-top: 11px;
     padding: 5px 40px 5px 10px;
-    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, .75);
     background-color: #e5e5e5;
     outline: 1px solid #fff3;
-    border: 1px solid #0000001a;
+    border: 1px solid hsla(0, 0, 81%, 1);
 }
 
 .search-bar-mobile form button {
@@ -46,6 +68,7 @@
     display: inline-block;
     width: 100%;
 }
+
 
 .main-logo {
     float: left;
@@ -109,23 +132,28 @@
     margin-left: 20px;
 }
 
-.searchbar-btn.btn-contact {
+.searchbar-btn.btn-contact:hover {
     background-color: #84858f;
     margin-left: 20px;
 }
+
 
 .search-bar {
     height: 56px;
     padding: 5px 10px;
     margin-left: 20px;
-    border: 1px solid #999aa2;
+    border: 1px solid #ccc;
+}
+
+#search {
+    width: 240px;
 }
 
 .search-container .icon-box {
     height: 56px;
     display: inline-block;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 23px !important;
     padding: 13px 20px;
     font-size: 1.063rem;
     color: #fff;
@@ -136,7 +164,7 @@
 
 .search-functions .phone {
     color: #333645;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .hamburger-box {

@@ -1,0 +1,21 @@
+.view-link {
+    text-decoration: none;
+    color: #333645;
+}
+
+.view-link:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #333645;
+    cursor: pointer;
+}

@@ -119,6 +119,16 @@
     .hidden-md {
         display: none;
     }
+
+    .search-container .icon-box {
+        border-radius: 0 3px 3px 0;
+        margin-left: 0;
+    }
+
+    .banner-img {
+        opacity: .5;
+    }
+
 }
 
 
@@ -131,8 +141,9 @@
         margin-left: 10px;
     }
 
-    .hamburger-box {
-        margin-right: 15px;
+
+    .hidden-desktop {
+        display: none !important;
     }
 
 
@@ -153,13 +164,15 @@
     }
 
     .banner-text p {
-        font-size: 1.7rem;
+        font-size: 1.625rem;
+        line-height: 2.5rem
     }
 
 
     .hidden-lg {
         display: none;
     }
+
 
     .banner-img:before {
         content: "";

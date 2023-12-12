@@ -32,12 +32,14 @@
 }
 
 .service-card {
-    margin-top: 15px;
-    cursor: pointer;
-    padding: 30px;
     width: 100%;
+    padding: 30px;
+    cursor: pointer;
+    margin-top: 15px;
     text-align: center;
+    position: relative;
     border-radius: 10px;
+    transition: .5s ease;
     border: 1px solid lightgrey;
     box-shadow: 0px 3px 30px rgba(0, 0, 0, .1);
 }
@@ -55,6 +57,7 @@
 }
 
 .service-card h2 {
+    font-size: 1.3rem;
     color: #333645;
     font-weight: 400;
     padding-bottom: 10px;
@@ -63,8 +66,9 @@
 
 .service-card p {
     color: #333645;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     line-height: 1.375rem;
+    margin-bottom: 13px;
 }
 
 .service-block .service-card:hover {
@@ -74,6 +78,14 @@
 .service-card:hover h2,
 .service-card:hover p {
     color: #fff !important;
+}
+
+.btn.read-more {
+    margin-top: 0;
+    font-size: 1.1rem;
+    line-height: 35px;
+    padding: 5px 15px;
+    border-radius: 3px;
 }
 
 

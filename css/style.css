@@ -24,18 +24,6 @@ p {
   margin-bottom: 25px;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 15px 20px;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: #fff;
-  border-radius: 5px;
-  background-color: #333645;
-  cursor: pointer;
-}
-
 #container {
   margin-left: auto;
   margin-right: auto;
@@ -63,8 +51,30 @@ a {
   cursor: pointer;
 }
 
-.input {
+input {
   font-size: 14px;
+}
+
+.view-link {
+  text-decoration: none;
+  color: #333645;
+}
+
+.view-link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #333645;
+  cursor: pointer;
 }
 
 .header-flex {
@@ -77,6 +87,26 @@ a {
   align-items: center;
 }
 
+#ipad-search {
+  display: block;
+  height: 56px;
+  line-height: 46px;
+  border: 1px solid #ccc;
+  width: 175px;
+}
+
+#ipad-search:focus {
+  outline: none;
+}
+
+input:focus,
+.search-bar:focus,
+#ipad-search:focus {
+  outline: none;
+  border-color: #5bc0de;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
 .search-bar-mobile form {
   position: relative;
 }
@@ -84,12 +114,13 @@ a {
 .search-bar-mobile form input {
   width: 100%;
   height: 47px;
+  outline: none;
+  box-shadow: none;
   margin-top: 11px;
   padding: 5px 40px 5px 10px;
-  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.75);
   background-color: #e5e5e5;
   outline: 1px solid rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border: 1px solid hsl(0, 0%, 81%);
 }
 
 .search-bar-mobile form button {
@@ -169,7 +200,7 @@ a {
   margin-left: 20px;
 }
 
-.searchbar-btn.btn-contact {
+.searchbar-btn.btn-contact:hover {
   background-color: #84858f;
   margin-left: 20px;
 }
@@ -178,14 +209,18 @@ a {
   height: 56px;
   padding: 5px 10px;
   margin-left: 20px;
-  border: 1px solid #999aa2;
+  border: 1px solid #ccc;
+}
+
+#search {
+  width: 240px;
 }
 
 .search-container .icon-box {
   height: 56px;
   display: inline-block;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 23px !important;
   padding: 13px 20px;
   font-size: 1.063rem;
   color: #fff;
@@ -196,7 +231,7 @@ a {
 
 .search-functions .phone {
   color: #333645;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .hamburger-box {
@@ -495,6 +530,7 @@ header .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #000;
 }
 
 .banner-img {
@@ -535,14 +571,16 @@ header .container {
 }
 
 .banner-text {
-  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
 .banner-text h1 {
+  padding-right: 20px;
   font-size: 2.5rem;
+  line-height: 3rem;
+  margin-top: 0;
 }
 
 .banner-text p {
@@ -553,7 +591,10 @@ header .container {
 
 .btn.banner-btn {
   background-color: #926fb1;
-  align-self: left;
+  font-size: 1.25rem;
+  border-radius: 3px;
+  line-height: 50px;
+  padding: 5px 20px;
 }
 
 .service-block {
@@ -585,12 +626,14 @@ header .container {
 }
 
 .service-card {
-  margin-top: 15px;
-  cursor: pointer;
-  padding: 30px;
   width: 100%;
+  padding: 30px;
+  cursor: pointer;
+  margin-top: 15px;
   text-align: center;
+  position: relative;
   border-radius: 10px;
+  transition: 0.5s ease;
   border: 1px solid lightgrey;
   box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1);
 }
@@ -606,6 +649,7 @@ header .container {
 }
 
 .service-card h2 {
+  font-size: 1.3rem;
   color: #333645;
   font-weight: 400;
   padding-bottom: 10px;
@@ -614,8 +658,9 @@ header .container {
 
 .service-card p {
   color: #333645;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   line-height: 1.375rem;
+  margin-bottom: 13px;
 }
 
 .service-block .service-card:hover {
@@ -625,6 +670,14 @@ header .container {
 .service-card:hover h2,
 .service-card:hover p {
   color: #fff !important;
+}
+
+.btn.read-more {
+  margin-top: 0;
+  font-size: 1.1rem;
+  line-height: 35px;
+  padding: 5px 15px;
+  border-radius: 3px;
 }
 
 .service-card > .software-card > .icon-container.software-icon,
@@ -866,7 +919,7 @@ header .container {
   line-height: 1.4rem;
 }
 
-.btn-read-more {
+.news-card .read-more {
   margin-top: 0px;
   margin-bottom: 30px;
 }
@@ -944,6 +997,7 @@ header .container {
 }
 
 .client-image-container {
+  position: relative;
   padding: 0 20px;
 }
 
@@ -954,9 +1008,44 @@ header .container {
 }
 
 .hover-box {
-  display: none;
   position: absolute;
+  bottom: 100%;
+  left: -200px;
+  right: -200px;
+  display: none;
+  background-color: #333645;
+  padding: 20px;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto 50px;
+}
+
+.hover-box h3 {
+  font-size: 1.125rem;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+.hover-box h3.no-pad {
+  padding-bottom: 0;
+}
+
+.hover-box p {
+  font-size: 0.8125ren;
+}
+
+.hover-btn {
+  padding: 5px 15px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.btn-green {
   background-color: #2ecc71;
+}
+
+.btn-purp {
+  background-color: #926fb1;
 }
 
 .client-image-container:hover .hover-box {
@@ -1177,13 +1266,20 @@ footer .container {
   .hidden-md {
     display: none;
   }
+  .search-container .icon-box {
+    border-radius: 0 3px 3px 0;
+    margin-left: 0;
+  }
+  .banner-img {
+    opacity: 0.5;
+  }
 }
 @media (min-width: 992px) {
   .main-logo {
     margin-left: 10px;
   }
-  .hamburger-box {
-    margin-right: 15px;
+  .hidden-desktop {
+    display: none !important;
   }
   .container {
     width: 970px;
@@ -1197,7 +1293,8 @@ footer .container {
     font-size: 4rem;
   }
   .banner-text p {
-    font-size: 1.7rem;
+    font-size: 1.625rem;
+    line-height: 2.5rem;
   }
   .hidden-lg {
     display: none;
