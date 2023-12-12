@@ -23,10 +23,6 @@
     margin-top: 30px;
 }
 
-.info-btn-container a.btn.info-btn:nth-child(2) {
-    margin-bottom: 50px;
-}
-
 
 .info-banner h2 {
     font-size: 2.3rem;
@@ -60,35 +56,4 @@
 
 .client-name {
     font-weight: 600;
-}
-
-
-
-.info-banner .btn {
-    color: #fff;
-    background-color: #272936;
-    padding: 10px 30px;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-.info-banner .btn:hover {
-    background-color: #121318;
-}
-
-.btn.quote-btn.google-btn {
-    background-color: #4387f6;
-    margin-right: 10px;
-}
-
-.btn.quote-btn.google-btn:hover {
-    background-color: #166af4;
-}
-
-.btn.quote-btn.trustpilot-btn {
-    background-color: #00b67b;
-}
-
-.btn.quote-btn.trustpilot-btn:hover {
-    background-color: #009b69;
 }

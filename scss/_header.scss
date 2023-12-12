@@ -69,9 +69,6 @@
     max-width: 100%;
 }
 
-.btn-container {
-    float: left;
-}
 
 .search-container {
     display: flex;
@@ -105,26 +102,6 @@
     line-height: 45px;
 }
 
-
-.searchbar-btn.btn-support {
-    background-color: #4183d7;
-    margin-right: -5px;
-}
-
-.searchbar-btn.btn-support:hover {
-    background-color: #2a6ec6;
-    margin-right: -5px;
-}
-
-.searchbar-btn.btn-contact {
-    background-color: #999aa2;
-    margin-left: 20px;
-}
-
-.searchbar-btn.btn-contact:hover {
-    background-color: #84858f;
-    margin-left: 20px;
-}
 
 
 .search-bar {

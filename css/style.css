@@ -82,6 +82,30 @@ input {
   cursor: pointer;
 }
 
+.btn-container {
+  float: left;
+}
+
+.searchbar-btn.btn-support {
+  background-color: #4183d7;
+  margin-right: -5px;
+}
+
+.searchbar-btn.btn-support:hover {
+  background-color: #2a6ec6;
+  margin-right: -5px;
+}
+
+.searchbar-btn.btn-contact {
+  background-color: #999aa2;
+  margin-left: 20px;
+}
+
+.searchbar-btn.btn-contact:hover {
+  background-color: #84858f;
+  margin-left: 20px;
+}
+
 #ipad-search:focus {
   outline: none;
 }
@@ -92,6 +116,125 @@ input {
   outline: none;
   border-color: #5bc0de;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
+.btn.banner-btn {
+  background-color: #926fb1;
+  font-size: 1.25rem;
+  border-radius: 3px;
+  line-height: 50px;
+  padding: 5px 20px;
+  margin: 30px 0 20px;
+}
+
+.btn.banner-btn:hover {
+  background-color: #7e57a0;
+}
+
+.btn.read-more {
+  margin-top: 0;
+  font-size: 1.1rem;
+  line-height: 35px;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+.info-btn-container a.btn.info-btn:nth-child(2) {
+  margin-bottom: 50px;
+}
+
+.info-banner .btn {
+  color: #fff;
+  background-color: #272936;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.info-banner .btn:hover {
+  background-color: #121318;
+}
+
+.btn.quote-btn.google-btn {
+  background-color: #4387f6;
+  margin-right: 10px;
+}
+
+.btn.quote-btn.google-btn:hover {
+  background-color: #166af4;
+}
+
+.btn.quote-btn.trustpilot-btn {
+  background-color: #00b67b;
+}
+
+.btn.quote-btn.trustpilot-btn:hover {
+  background-color: #009b69;
+}
+
+.btn-news {
+  background-color: #4183d7;
+  position: absolute;
+  right: 0;
+  z-index: 4;
+  padding: 5px 10px;
+  margin-top: 15px;
+}
+
+.btn-insights {
+  background-color: #d64541;
+}
+
+.news-1 .btn {
+  background-color: #4183d7;
+}
+
+.news-2 .btn {
+  background-color: #d64541;
+}
+
+.news-3 h3 {
+  color: #2ecc71;
+}
+
+.news-3 .btn,
+.news-3 .btn-news {
+  background-color: #2ecc71;
+}
+
+.btn-green {
+  background-color: #2ecc71;
+}
+
+.btn-green:hover {
+  background-color: #009b69;
+}
+
+.btn-purp {
+  background-color: #926fb1;
+}
+
+.btn-purp:hover {
+  background-color: #7e57a0;
+}
+
+.btn-blue {
+  background-color: #67809f;
+}
+
+.btn-blue:hover {
+  background-color: #566c88;
+}
+
+.btn.btn-submit {
+  border: none;
+  padding: 5px 15px;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.btn.btn-submit:hover {
+  background-color: #22242e;
 }
 
 .header-flex {
@@ -155,10 +298,6 @@ input {
   max-width: 100%;
 }
 
-.btn-container {
-  float: left;
-}
-
 .search-container {
   display: flex;
   float: right;
@@ -188,26 +327,6 @@ input {
   margin-right: 5px;
   font-size: 1.438rem;
   line-height: 45px;
-}
-
-.searchbar-btn.btn-support {
-  background-color: #4183d7;
-  margin-right: -5px;
-}
-
-.searchbar-btn.btn-support:hover {
-  background-color: #2a6ec6;
-  margin-right: -5px;
-}
-
-.searchbar-btn.btn-contact {
-  background-color: #999aa2;
-  margin-left: 20px;
-}
-
-.searchbar-btn.btn-contact:hover {
-  background-color: #84858f;
-  margin-left: 20px;
 }
 
 .search-bar {
@@ -602,19 +721,6 @@ header .container {
   margin-bottom: 10px;
 }
 
-.btn.banner-btn {
-  background-color: #926fb1;
-  font-size: 1.25rem;
-  border-radius: 3px;
-  line-height: 50px;
-  padding: 5px 20px;
-  margin: 30px 0 20px;
-}
-
-.btn.banner-btn:hover {
-  background-color: #7e57a0;
-}
-
 .service-block {
   display: flex;
   flex-wrap: wrap;
@@ -699,14 +805,6 @@ header .container {
 .service-card:hover h2,
 .service-card:hover p {
   color: #fff !important;
-}
-
-.btn.read-more {
-  margin-top: 0;
-  font-size: 1.1rem;
-  line-height: 35px;
-  padding: 5px 15px;
-  border-radius: 3px;
 }
 
 .service-card > .software-card > .icon-container.software-icon,
@@ -871,10 +969,6 @@ header .container {
   margin-top: 30px;
 }
 
-.info-btn-container a.btn.info-btn:nth-child(2) {
-  margin-bottom: 50px;
-}
-
 .info-banner h2 {
   font-size: 2.3rem;
   margin-bottom: 40px;
@@ -908,35 +1002,6 @@ header .container {
   font-weight: 600;
 }
 
-.info-banner .btn {
-  color: #fff;
-  background-color: #272936;
-  padding: 10px 30px;
-  border-radius: 5px;
-  margin: 5px;
-}
-
-.info-banner .btn:hover {
-  background-color: #121318;
-}
-
-.btn.quote-btn.google-btn {
-  background-color: #4387f6;
-  margin-right: 10px;
-}
-
-.btn.quote-btn.google-btn:hover {
-  background-color: #166af4;
-}
-
-.btn.quote-btn.trustpilot-btn {
-  background-color: #00b67b;
-}
-
-.btn.quote-btn.trustpilot-btn:hover {
-  background-color: #009b69;
-}
-
 .news-title-card {
   color: #333645;
   width: 100%;
@@ -963,19 +1028,6 @@ header .container {
 .news-card:hover {
   top: -10px;
   transition: 0.5s ease;
-}
-
-.btn-news {
-  background-color: #4183d7;
-  position: absolute;
-  right: 0;
-  z-index: 4;
-  padding: 5px 10px;
-  margin-top: 15px;
-}
-
-.btn-insights {
-  background-color: #d64541;
 }
 
 .news-card p {
@@ -1032,25 +1084,8 @@ header .container {
   padding-bottom: 20px;
 }
 
-.news-1 .btn {
-  background-color: #4183d7;
-}
-
 .news-2 h3 {
   color: #d64541;
-}
-
-.news-2 .btn {
-  background-color: #d64541;
-}
-
-.news-3 h3 {
-  color: #2ecc71;
-}
-
-.news-3 .btn,
-.news-3 .btn-news {
-  background-color: #2ecc71;
 }
 
 .client-image-block {
@@ -1138,30 +1173,6 @@ header .container {
   font-size: 16px;
 }
 
-.btn-green {
-  background-color: #2ecc71;
-}
-
-.btn-green:hover {
-  background-color: #009b69;
-}
-
-.btn-purp {
-  background-color: #926fb1;
-}
-
-.btn-purp:hover {
-  background-color: #7e57a0;
-}
-
-.btn-blue {
-  background-color: #67809f;
-}
-
-.btn-blue:hover {
-  background-color: #566c88;
-}
-
 .client-image-container:hover .hover-box,
 .client-image-container img:hover .hover-box {
   display: block;
@@ -1231,17 +1242,6 @@ header .container {
 .marketing-text a {
   color: #333645;
   text-decoration: underline;
-}
-
-.btn.btn-submit {
-  border: none;
-  padding: 5px 15px;
-  font-size: 1.1rem;
-  margin-bottom: 40px;
-}
-
-.btn.btn-submit:hover {
-  background-color: #22242e;
 }
 
 footer {
