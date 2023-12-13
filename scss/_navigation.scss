@@ -293,3 +293,85 @@
 .nav-container>.container>ul>.nav-item.item-7:hover>a:before {
     border-color: #ce4125 transparent transparent;
 }
+
+
+
+// ==========================================================================
+// Mobile Nav Style
+// ==========================================================================
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav ul {
+    list-style: none;
+}
+
+.mobile-nav .nav-container {}
+
+
+
+// ==========================================================================
+// Side Menu Style
+// ==========================================================================
+
+
+.side-menu {
+    background-color: #3d404e;
+    text-transform: uppercase;
+    z-index: 10;
+    width: 275px;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    right: -275px;
+    transition: 0.5s ease;
+}
+
+
+.side-menu.active2 {
+    width: 275px;
+    transition: .5s ease-in-out;
+}
+
+.side-menu-box .side-menu-links li {
+    font-size: 1rem;
+}
+
+.side-menu-links li:not(:first-child) {
+    display: block;
+    height: 52px;
+    border-top: 1px solid rgba(0, 0, 0, .45);
+    background-color: #262834;
+    font-size: .875rem;
+    line-height: 1.42857143;
+}
+
+.side-menu-links li a {
+    display: block;
+    padding: 15px 20px;
+    border-top: 1px solid hsla(0, 0%, 100%, .05);
+}
+
+.side-menu-title {
+    display: block;
+    height: 58px;
+    align-items: center;
+    border-top: 1px solid hsla(0, 0%, 100%, .05);
+}
+
+
+.side-menu-links .side-menu-title a {
+    padding: 20px;
+    height: 58px;
+    align-items: center;
+
+}
+
+
+.side-menu-links li:not(:first-child) .icon-container {
+    vertical-align: middle;
+    padding-right: 15px;
+    font-size: .5rem;
+}

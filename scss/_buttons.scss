@@ -82,6 +82,78 @@
     background-color: #7e57a0;
 }
 
+.btn.software-btn {
+    background-color: #67809f;
+}
+
+.btn.software-btn:hover {
+    background-color: #566c88;
+}
+
+.btn.it-btn {
+    background-color: #4183d7;
+}
+
+.btn.it-btn:hover {
+    background-color: #2a6ec6;
+}
+
+.btn.digital-btn {
+    background-color: #2ecc71;
+}
+
+.btn.digital-btn:hover {
+    background-color: #26ab5f;
+}
+
+.btn.telecoms-btn {
+    background-color: #d64541;
+}
+
+.btn.telecoms-btn:hover {
+    background-color: #c42e2a;
+}
+
+.btn.cyber-btn {
+    background-color: #f62459;
+}
+
+.btn.cyber-btn:hover {
+    background-color: #e80a42;
+}
+
+.banner-btn span {
+    margin-left: 5px;
+}
+
+
+// ==========================================================================
+// Banner Radio Button Styling
+// ==========================================================================
+
+.manual-btn {
+    background-color: #ffffff80;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:first-child) {
+    margin-left: 20px;
+}
+
+.manual-btn:hover {
+    background-color: #869791;
+}
+
+.active {
+    background-color: #fff;
+    outline-offset: 4px;
+    outline: 2px solid #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: translateZ(0);
+}
 
 
 // ==========================================================================

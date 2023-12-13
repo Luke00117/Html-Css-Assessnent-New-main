@@ -5,6 +5,7 @@
 .banner {
     position: relative;
     height: 550px;
+    min-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,11 +60,45 @@
     padding-right: 20px;
     font-size: 2.5rem;
     line-height: 3rem;
-    margin-top: 0;
+    margin: 0 0 1.25rem 0;
 }
 
 .banner-text p {
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+
+
+
+// ==========================================================================
+// Sliding Banner Styling
+// ==========================================================================
+
+.banner-slider {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    position: relative;
+    width: 700vw;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.slides input {
+    display: none;
+}
+
+.manual-nav {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    margin-top: -60px;
+    z-index: 4
 }

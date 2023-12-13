@@ -124,6 +124,10 @@
         display: none;
     }
 
+    .mobile-nav {
+        display: block;
+    }
+
     .search-container .icon-box {
         border-radius: 0 3px 3px 0;
         margin-left: 0;
@@ -147,6 +151,11 @@
 
 
 @media (min-width: 992px) {
+
+    .side-menu.active2 {
+        width: 350px;
+    }
+
 
     .main-logo {
         margin-left: 10px;

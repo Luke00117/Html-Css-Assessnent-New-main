@@ -17,6 +17,7 @@ body {
 
 body {
   color: #fff;
+  letter-spacing: 0.4px;
 }
 
 p {
@@ -31,6 +32,25 @@ img {
 #container {
   margin-left: auto;
   margin-right: auto;
+  transition: all 0.5s;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9;
+  transition: all 0.5s;
+}
+
+#overlay.active2 {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
 }
 
 .container {
@@ -128,6 +148,74 @@ input {
 
 .btn.banner-btn:hover {
   background-color: #7e57a0;
+}
+
+.btn.software-btn {
+  background-color: #67809f;
+}
+
+.btn.software-btn:hover {
+  background-color: #566c88;
+}
+
+.btn.it-btn {
+  background-color: #4183d7;
+}
+
+.btn.it-btn:hover {
+  background-color: #2a6ec6;
+}
+
+.btn.digital-btn {
+  background-color: #2ecc71;
+}
+
+.btn.digital-btn:hover {
+  background-color: #26ab5f;
+}
+
+.btn.telecoms-btn {
+  background-color: #d64541;
+}
+
+.btn.telecoms-btn:hover {
+  background-color: #c42e2a;
+}
+
+.btn.cyber-btn {
+  background-color: #f62459;
+}
+
+.btn.cyber-btn:hover {
+  background-color: #e80a42;
+}
+
+.banner-btn span {
+  margin-left: 5px;
+}
+
+.manual-btn {
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  padding: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:first-child) {
+  margin-left: 20px;
+}
+
+.manual-btn:hover {
+  background-color: #869791;
+}
+
+.active {
+  background-color: #fff;
+  outline-offset: 4px;
+  outline: 2px solid #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: translateZ(0);
 }
 
 .btn.read-more {
@@ -291,6 +379,7 @@ input {
   float: left;
   cursor: pointer;
   max-width: 370px;
+  padding-top: 12px;
 }
 
 .main-logo img {
@@ -308,6 +397,7 @@ input {
   vertical-align: middle;
   align-items: center;
   float: right;
+  padding: 7px 0;
 }
 
 .searchbar-btn {
@@ -385,8 +475,16 @@ input {
   margin: 6px 0;
 }
 
-header .container {
-  display: table;
+.hamburger.active2 .bar:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.hamburger.active2 .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active2 .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(45deg);
 }
 
 .nav-container {
@@ -654,9 +752,73 @@ header .container {
   border-color: #ce4125 transparent transparent;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav ul {
+  list-style: none;
+}
+
+.side-menu {
+  background-color: #3d404e;
+  text-transform: uppercase;
+  z-index: 10;
+  width: 275px;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: -275px;
+  transition: 0.5s ease;
+}
+
+.side-menu.active2 {
+  width: 275px;
+  transition: 0.5s ease-in-out;
+}
+
+.side-menu-box .side-menu-links li {
+  font-size: 1rem;
+}
+
+.side-menu-links li:not(:first-child) {
+  display: block;
+  height: 52px;
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+  background-color: #262834;
+  font-size: 0.875rem;
+  line-height: 1.42857143;
+}
+
+.side-menu-links li a {
+  display: block;
+  padding: 15px 20px;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+}
+
+.side-menu-title {
+  display: block;
+  height: 58px;
+  align-items: center;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+}
+
+.side-menu-links .side-menu-title a {
+  padding: 20px;
+  height: 58px;
+  align-items: center;
+}
+
+.side-menu-links li:not(:first-child) .icon-container {
+  vertical-align: middle;
+  padding-right: 15px;
+  font-size: 0.5rem;
+}
+
 .banner {
   position: relative;
   height: 550px;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -711,13 +873,40 @@ header .container {
   padding-right: 20px;
   font-size: 2.5rem;
   line-height: 3rem;
-  margin-top: 0;
+  margin: 0 0 1.25rem 0;
 }
 
 .banner-text p {
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.banner-slider {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  position: relative;
+  width: 700vw;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.slides input {
+  display: none;
+}
+
+.manual-nav {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  width: 100vw;
+  margin-top: -60px;
+  z-index: 4;
 }
 
 .service-block {
@@ -1430,6 +1619,9 @@ footer .container {
   .hidden-md {
     display: none;
   }
+  .mobile-nav {
+    display: block;
+  }
   .search-container .icon-box {
     border-radius: 0 3px 3px 0;
     margin-left: 0;
@@ -1445,6 +1637,9 @@ footer .container {
   }
 }
 @media (min-width: 992px) {
+  .side-menu.active2 {
+    width: 350px;
+  }
   .main-logo {
     margin-left: 10px;
   }
