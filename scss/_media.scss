@@ -68,6 +68,10 @@
         padding: 0px 10px 50px;
     }
 
+    .cookie-container .cookie-box .button-box .cookie-btn:first-child {
+        margin-bottom: 30px;
+    }
+
 }
 
 
@@ -117,6 +121,10 @@
 
     .cookie-box {
         width: 600px;
+    }
+
+    .cookie-container .cookie-box .button-box .cookie-btn {
+        width: 264px;
     }
 
 }

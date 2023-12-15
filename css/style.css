@@ -1637,24 +1637,42 @@ footer .container {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.cookie-text {
+  padding: 20px;
+}
+
 .cookie-box p {
   line-height: 1.875rem;
   color: #666666;
-  padding: 20px;
   margin-bottom: 25px;
 }
 
 .cookie-box a {
-  color: #666666;
+  color: #333645;
 }
 
 .cookie-box .button-box {
+  display: flex;
+  flex-wrap: wrap;
   border-top: 1px solid #e5e5e5;
   padding: 20px;
+  justify-content: space-between;
 }
 
-.cookie-btn {
-  padding: 0px 15px;
+.cookie-container .cookie-box .button-box .cookie-btn {
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  line-height: 35px;
+  text-align: center;
+  background-color: #999aa2;
+  border: 1px solid #999aa2;
+  width: 100%;
+}
+
+#accept-btn {
+  background-color: #926fb1;
+  border-color: #926fb1;
 }
 
 @media (min-width: 475px) {
@@ -1706,6 +1724,9 @@ footer .container {
     font-size: 1.5rem;
     padding: 0px 10px 50px;
   }
+  .cookie-container .cookie-box .button-box .cookie-btn:first-child {
+    margin-bottom: 30px;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -1741,6 +1762,9 @@ footer .container {
   }
   .cookie-box {
     width: 600px;
+  }
+  .cookie-container .cookie-box .button-box .cookie-btn {
+    width: 264px;
   }
 }
 @media (max-width: 991px) {

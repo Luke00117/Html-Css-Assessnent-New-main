@@ -2021,19 +2021,19 @@
                 <div class="newsletter-signup">
                     <h2 class="form-title">Email Newsletter Sign-Up</h2>
 
-                    <form>
+                    <form autocomplete="on">
 
                         <div class="form-input">
 
                             <div class="input-box">
                                 <label for="name">Your Name</label>
-                                <input type="text" id="name" name="name">
+                                <input type="text" id="name" name="name" autocomplete="on">
                             </div>
 
 
                             <div class="input-box">
                                 <label for="email">Your Email</label>
-                                <input type="text" id="email" name="email">
+                                <input type="text" id="email" name="email" autocomplete="on">
                             </div>
 
                         </div>
@@ -2272,14 +2272,15 @@
         <div class="cookie-container">
             <div class="cookie-box">
                 <h3 class="cookie-title">Cookies Policy</h3>
-                <p class="cookie-message">Our website uses cookies. This helps us povide yo with a good experience on
-                    our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies
-                    click "change setings". For a detailed explanation, click on <a href="#">"Privacy Policy"</a>
-                    otherwise click
-                    "Accept Cookies" to enter.</p>
+                <div class="cookie-text">
+                    <p class="cookie-message">Our website uses cookies. This helps us provide you with a good experience
+                        on our website. To see what cookies we use and what they do, and to opt-in on non-essential
+                        cookies click "change settings". For a detailed explanation, click on <a href="#">"Privacy
+                            Policy"</a> otherwise click "Accept Cookies" to enter.</p>
+                </div>
                 <div class="button-box">
-                    <button class="btn cookie-btn">Change Settings</button>
-                    <button class="btn cookie-btn" id="accept-btn">Accept Cookies</button>
+                    <a href="#" class="btn cookie-btn">Change Settings</a>
+                    <a href="#" class="btn cookie-btn" id="accept-btn">Accept Cookies</a>
                 </div>
 
             </div>
