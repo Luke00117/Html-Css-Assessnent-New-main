@@ -87,6 +87,7 @@ const cookieAlert = document.querySelector(".cookie-container"),
   buttons = document.querySelectorAll(".cookie-btn");
 
   const executeCookie = () => {
+    if(document.cookie.includes("mrAnderson")) return;
     cookieAlert.classList.add("show");
 
     buttons.forEach(button =>  {
