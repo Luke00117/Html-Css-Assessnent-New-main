@@ -115,6 +115,10 @@
         display: inline-block;
     }
 
+    .cookie-box {
+        width: 600px;
+    }
+
 }
 
 
@@ -126,6 +130,10 @@
 
     .mobile-nav {
         display: block;
+    }
+
+    .side-menu-links:first-child {
+        display: none;
     }
 
     .search-container .icon-box {
@@ -154,6 +162,10 @@
 
     .side-menu.active2 {
         width: 350px;
+    }
+
+    .hidden-desktop {
+        display: none;
     }
 
 
