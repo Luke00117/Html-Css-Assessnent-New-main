@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//this function is for the hamburge button to togle the sidebar
+//this function is for the hamburger button to toggle the sidebar
 
 function toggleSidebar() {
   var hamburger = document.querySelector('.hamburger');
