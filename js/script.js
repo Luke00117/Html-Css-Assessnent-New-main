@@ -1,53 +1,57 @@
 
 // This code is for the sliding banner
 document.addEventListener("DOMContentLoaded", function () {
-    var currentSlide = 0;
-    var totalSlides = document.querySelectorAll('.banner').length;
-    var slideWidth;
+  var currentSlide = 0;
+  var totalSlides = document.querySelectorAll('.banner').length;
+  var slideWidth;
+  var intervalId; // Variable to store the interval ID
 
-    function updateSlide() {
-      slideWidth = document.querySelector('.banner').clientWidth;
-      var transformValue = -currentSlide * slideWidth + 'px';
-      document.querySelector('.slides').style.transform = 'translateX(' + transformValue + ')';
-      updateActiveButton();
-    }
+  function updateSlide() {
+    slideWidth = document.querySelector('.banner').clientWidth;
+    var transformValue = -currentSlide * slideWidth + 'px';
+    document.querySelector('.slides').style.transform = 'translateX(' + transformValue + ')';
+    updateActiveButton();
+  }
 
-    function updateActiveButton() {
-      document.querySelectorAll('.manual-btn').forEach(function (btn, index) {
-        btn.classList.remove('active');
-        if (index === currentSlide) {
-          btn.classList.add('active');
-        }
-      });
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateSlide();
-    }
-
-    function goToSlide(index) {
-      currentSlide = index;
-      updateSlide();
-    }
-
-    window.addEventListener('resize', function () {
-      updateSlide(); 
-    });
-
-    
-    setInterval(nextSlide, 5000);
-
-    
+  function updateActiveButton() {
     document.querySelectorAll('.manual-btn').forEach(function (btn, index) {
-      btn.addEventListener('click', function () {
-        goToSlide(index);
-      });
+      btn.classList.remove('active');
+      if (index === currentSlide) {
+        btn.classList.add('active');
+      }
     });
+  }
 
-    
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlide();
+
+    // Check if it's the seventh slide, then clear the interval
+    if (currentSlide === 6) {
+      clearInterval(intervalId);
+    }
+  }
+
+  function goToSlide(index) {
+    currentSlide = index;
+    updateSlide();
+  }
+
+  window.addEventListener('resize', function () {
     updateSlide();
   });
+
+  // Store the interval ID in the variable
+  intervalId = setInterval(nextSlide, 5000);
+
+  document.querySelectorAll('.manual-btn').forEach(function (btn, index) {
+    btn.addEventListener('click', function () {
+      goToSlide(index);
+    });
+  });
+
+  updateSlide();
+});
 
 
 
