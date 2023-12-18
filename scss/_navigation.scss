@@ -293,3 +293,33 @@
 .nav-container>.container>ul>.nav-item.item-7:hover>a:before {
     border-color: #ce4125 transparent transparent;
 }
+
+
+
+
+// ==========================================================================
+// Sticky Nav Style
+// ==========================================================================
+
+
+#shy-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 97;
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+    background: #fff;
+}
+
+.is-watching {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+#content {
+    z-index: 1;
+    padding-top: 215.42px;
+}

@@ -68,6 +68,10 @@
         padding: 0px 10px 50px;
     }
 
+    .cookie-container .cookie-box .button-box .cookie-btn:first-child {
+        margin-bottom: 30px;
+    }
+
 }
 
 
@@ -115,12 +119,28 @@
         display: inline-block;
     }
 
+    .cookie-box {
+        width: 600px;
+    }
+
+    .cookie-container .cookie-box .button-box .cookie-btn {
+        width: 264px;
+    }
+
 }
 
 
 
 @media (max-width: 991px) {
     .hidden-md {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .side-menu-links:first-child {
         display: none;
     }
 
@@ -147,6 +167,15 @@
 
 
 @media (min-width: 992px) {
+
+    .side-menu.active2 {
+        width: 350px;
+    }
+
+    .hidden-desktop {
+        display: none;
+    }
+
 
     .main-logo {
         margin-left: 10px;
