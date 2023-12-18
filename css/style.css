@@ -770,7 +770,6 @@ input {
 
 #content {
   z-index: 1;
-  padding-top: 215.42px;
 }
 
 .mobile-nav {
@@ -951,7 +950,6 @@ input {
 }
 
 .banner-text h1 {
-  padding-right: 20px;
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem 0;

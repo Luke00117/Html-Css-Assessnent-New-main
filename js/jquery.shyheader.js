@@ -1,16 +1,3 @@
-/*
- * BASED ON THE ORIGINAL IDEA OF Marius Craciunoiu
- * https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c#.wc32ja29i
- *
- *
- * jQuery.shyheader v0.1.0
- * https://github.com/alejandromur/shyheader
- * Copyright 2016, alejandro@mamutlove.es
- *
- * Licensed under the MIT license:
- * http://www.opensource.org/licenses/MIT
- */
-
 document.addEventListener('DOMContentLoaded', function () {
 
     (function ($, window, document, undefined) {
@@ -18,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
         "use strict";
 
         $.shyheader = function (el, options) {
-
             var base = this;
 
             base.$el = $(el);
@@ -32,19 +18,24 @@ document.addEventListener('DOMContentLoaded', function () {
             var CURRENT_OFFSET = 0;
             var DELTA = 5;
             var HEADER_HEIGHT = 0;
-            var TRIGGER_POINT = 500; // Adjust this value based on the scroll position you want
+            var TRIGGER_POINT = 500;
             var BODY = "";
-            var INITIAL_SCROLL_DONE = false; // Track if the initial scroll has occurred
+            var INITIAL_SCROLL_DONE = false;
 
             base.initialize = function () {
                 base.options = $.extend({}, $.shyheader.defaultOptions, options);
 
                 HEADER_HEIGHT = base.$el.outerHeight(true);
 
-                if (base.options.container !== "undefined") {
-                    BODY = $('.' + base.options.container);
-                    BODY.css("padding-top", HEADER_HEIGHT + "px");
-                    base.options.offsetContentFlag = true;
+                if (base.options.offsetElementId) {
+                    var offsetElement = document.getElementById(base.options.offsetElementId);
+                    if (offsetElement) {
+                        HEADER_HEIGHT = offsetElement.offsetHeight;
+                        base.options.offsetContentFlag = true;
+                        $("#content").css("padding-top", HEADER_HEIGHT + "px");
+                    } else {
+                        console.error("Element with ID " + base.options.offsetElementId + " not found.");
+                    }
                 }
 
                 window.addEventListener("scroll", base.triggerScroll, false);
@@ -54,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 IS_SCROLLING = true;
                 SCROLL = document.body.scrollTop || window.pageYOffset;
 
-                // Check if the initial scroll has occurred
                 if (!INITIAL_SCROLL_DONE) {
                     INITIAL_SCROLL_DONE = true;
                     return;
@@ -83,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
             };
 
             base.getDirection = function () {
-
                 CURRENT_OFFSET = SCROLL;
 
                 if (Math.abs(OLD_OFFSET - CURRENT_OFFSET) <= DELTA) {
@@ -102,18 +91,15 @@ document.addEventListener('DOMContentLoaded', function () {
             };
 
             base.initialize();
-
         };
-
 
         $.shyheader.defaultOptions = {
             classname: "is-watching",
-            container: 'undefined',
+            offsetElementId: null,
             offsetContentFlag: false
         };
 
         $.fn.shyheader = function (options) {
-
             return this.each(function () {
                 var shyheader = new $.shyheader(this, options);
             });
@@ -123,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     $("#shy-header").shyheader({
         classname: "is-watching",
-        container: 'content'
+        offsetElementId: 'shy-header'
     });
 
 });
