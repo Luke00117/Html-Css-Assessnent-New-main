@@ -11,105 +11,119 @@
  * http://www.opensource.org/licenses/MIT
  */
 
-(function( $, window, document, undefined ){
+document.addEventListener('DOMContentLoaded', function () {
 
-    "use strict";
+    (function ($, window, document, undefined) {
 
-    $.shyheader = function(el, options){
+        "use strict";
 
-        var base = this;
+        $.shyheader = function (el, options) {
 
-        base.$el = $(el);
-        base.el = el;
+            var base = this;
 
-        base.$el.data('shyheader',base);
+            base.$el = $(el);
+            base.el = el;
 
-        var IS_SCROLLING = false;
-        var SCROLL = 0;
-        var OLD_OFFSET = 0;
-        var CURRENT_OFFSET = 0;
-        var DELTA = 5;
-        var HEADER_HEIGHT = 0;
-        var BODY = "";
+            base.$el.data('shyheader', base);
 
-        base.initialize = function(){
-            base.options = $.extend({},$.shyheader.defaultOptions, options);
+            var IS_SCROLLING = false;
+            var SCROLL = 0;
+            var OLD_OFFSET = 0;
+            var CURRENT_OFFSET = 0;
+            var DELTA = 5;
+            var HEADER_HEIGHT = 0;
+            var TRIGGER_POINT = 500; // Adjust this value based on the scroll position you want
+            var BODY = "";
+            var INITIAL_SCROLL_DONE = false; // Track if the initial scroll has occurred
 
-            HEADER_HEIGHT = base.$el.outerHeight(true);
+            base.initialize = function () {
+                base.options = $.extend({}, $.shyheader.defaultOptions, options);
 
-            if( base.options.container !== "undefined" ){
-                BODY = $('.'+base.options.container);
-                BODY.css("padding-top", HEADER_HEIGHT+"px");
-                base.options.offsetContentFlag = true;
-            }
+                HEADER_HEIGHT = base.$el.outerHeight(true);
 
-            window.addEventListener("scroll", base.triggerScroll, false);
-
-        };
-
-        base.triggerScroll = function(){
-            IS_SCROLLING = true;
-            SCROLL = document.body.scrollTop || window.pageYOffset;
-            base.checkScrollPosition();
-        };
-
-        base.checkScrollPosition = function(){
-            if( base.options.offsetContentFlag ){
-              if( SCROLL >= HEADER_HEIGHT ){
-                base.watch();
-              }
-            }else{
-                base.watch();
-            }
-        };
-
-        base.watch = function(){
-            if( IS_SCROLLING ) {
-                base.getDirection();
-                IS_SCROLLING = false;
-            }
-        };
-
-        base.getDirection = function() {
-
-            CURRENT_OFFSET = SCROLL;
-
-            if( Math.abs(OLD_OFFSET - CURRENT_OFFSET) <= DELTA ){
-                return;
-            }
-
-            if( CURRENT_OFFSET > OLD_OFFSET ){
-                base.$el.addClass(base.options.classname);
-            }else{
-                if( CURRENT_OFFSET + $(window).height() < $(document).height() ) {
-                    base.$el.removeClass(base.options.classname);
+                if (base.options.container !== "undefined") {
+                    BODY = $('.' + base.options.container);
+                    BODY.css("padding-top", HEADER_HEIGHT + "px");
+                    base.options.offsetContentFlag = true;
                 }
-            }
 
-            OLD_OFFSET = CURRENT_OFFSET;
+                window.addEventListener("scroll", base.triggerScroll, false);
+            };
+
+            base.triggerScroll = function () {
+                IS_SCROLLING = true;
+                SCROLL = document.body.scrollTop || window.pageYOffset;
+
+                // Check if the initial scroll has occurred
+                if (!INITIAL_SCROLL_DONE) {
+                    INITIAL_SCROLL_DONE = true;
+                    return;
+                }
+
+                base.checkScrollPosition();
+            };
+
+            base.checkScrollPosition = function () {
+                if (base.options.offsetContentFlag) {
+                    if (SCROLL >= TRIGGER_POINT && SCROLL >= HEADER_HEIGHT) {
+                        base.watch();
+                    }
+                } else {
+                    if (SCROLL >= TRIGGER_POINT) {
+                        base.watch();
+                    }
+                }
+            };
+
+            base.watch = function () {
+                if (IS_SCROLLING) {
+                    base.getDirection();
+                    IS_SCROLLING = false;
+                }
+            };
+
+            base.getDirection = function () {
+
+                CURRENT_OFFSET = SCROLL;
+
+                if (Math.abs(OLD_OFFSET - CURRENT_OFFSET) <= DELTA) {
+                    return;
+                }
+
+                if (CURRENT_OFFSET > OLD_OFFSET) {
+                    base.$el.addClass(base.options.classname);
+                } else {
+                    if (CURRENT_OFFSET + $(window).height() < $(document).height()) {
+                        base.$el.removeClass(base.options.classname);
+                    }
+                }
+
+                OLD_OFFSET = CURRENT_OFFSET;
+            };
+
+            base.initialize();
+
         };
 
-        base.initialize();
 
-    };
+        $.shyheader.defaultOptions = {
+            classname: "is-watching",
+            container: 'undefined',
+            offsetContentFlag: false
+        };
 
+        $.fn.shyheader = function (options) {
 
-    $.shyheader.defaultOptions = {
-        classname : "is-watching",
-        container : 'undefined',
-        offsetContentFlag : false
-    };
+            return this.each(function () {
+                var shyheader = new $.shyheader(this, options);
+            });
+        };
 
-    $.fn.shyheader = function(options){
+    }(jQuery, window, document));
 
-        return this.each(function(){
-            var shyheader = new $.shyheader(this,options);
-        });
-    };
-
-}( jQuery, window, document ));
-
-$("#shy-header").shyheader({
-        classname : "is-watching",
-        container : 'content'
+    $("#shy-header").shyheader({
+        classname: "is-watching",
+        container: 'content'
     });
+
+});

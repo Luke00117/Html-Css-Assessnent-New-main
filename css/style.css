@@ -18,6 +18,7 @@ body {
 body {
   color: #fff;
   letter-spacing: 0.4px;
+  overflow-x: hidden;
 }
 
 p {
@@ -750,6 +751,28 @@ input {
   border-color: #ce4125 transparent transparent;
 }
 
+#shy-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 97;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  background: #fff;
+}
+
+.is-watching {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+#content {
+  z-index: 1;
+  padding-top: 215.42px;
+}
+
 .mobile-nav {
   display: none;
   line-height: 1.42;
@@ -813,10 +836,10 @@ input {
   background-color: #3d404e;
   text-transform: uppercase;
   z-index: 100;
-  width: 275px;
+  width: 0;
   position: fixed;
   top: 0;
-  right: -275px;
+  right: 0px;
   transition: 0.5s ease;
   max-height: 100vh;
   overflow-y: auto;
@@ -871,28 +894,6 @@ input {
   vertical-align: middle;
   padding-right: 15px;
   font-size: 0.5rem;
-}
-
-#shy-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 97;
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
-  background: #fff;
-}
-
-.is-watching {
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
-}
-
-#content {
-  z-index: 1;
-  padding-top: 215.42px;
 }
 
 .banner {
@@ -965,6 +966,7 @@ input {
 .banner-slider {
   position: relative;
   width: 100vw;
+  max-width: 100vw;
   overflow: hidden;
 }
 

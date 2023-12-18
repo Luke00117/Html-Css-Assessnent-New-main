@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var currentSlide = 0;
   var totalSlides = document.querySelectorAll('.banner').length;
   var slideWidth;
-  var intervalId; // Variable to store the interval ID
+  var slideInterval;
 
   function updateSlide() {
     slideWidth = document.querySelector('.banner').clientWidth;
@@ -25,10 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
   function nextSlide() {
     currentSlide = (currentSlide + 1) % totalSlides;
     updateSlide();
-
-    // Check if it's the seventh slide, then clear the interval
-    if (currentSlide === 6) {
-      clearInterval(intervalId);
+    
+    if (currentSlide === totalSlides - 1) {
+      clearInterval(slideInterval);
+      setTimeout(function () {
+        // Resume auto-scrolling after a delay
+        slideInterval = setInterval(nextSlide, 5000);
+      }, 2000); // Adjust the delay time as needed
     }
   }
 
@@ -41,12 +44,16 @@ document.addEventListener("DOMContentLoaded", function () {
     updateSlide();
   });
 
-  // Store the interval ID in the variable
-  intervalId = setInterval(nextSlide, 5000);
+  slideInterval = setInterval(nextSlide, 5000);
 
   document.querySelectorAll('.manual-btn').forEach(function (btn, index) {
     btn.addEventListener('click', function () {
+      clearInterval(slideInterval); // Stop automatic sliding when manual button is clicked
       goToSlide(index);
+      setTimeout(function () {
+        // Resume auto-scrolling after a delay
+        slideInterval = setInterval(nextSlide, 5000);
+      }, 2000); // Adjust the delay time as needed
     });
   });
 
@@ -70,16 +77,7 @@ function toggleSidebar() {
   const overlay = document.querySelector('#overlay');
   overlay.classList.toggle('active2');
 
-  const container = document.querySelector('#container');
 
- 
-  if (sidebar.classList.contains('active2')) {
-    container.style.transform = 'translateX(-275px)';
-    document.body.style.overflow = 'hidden'; 
-  } else {
-    container.style.transform = 'translateX(0)';
-    document.body.style.overflow = ''; 
-  }
 }
 
 

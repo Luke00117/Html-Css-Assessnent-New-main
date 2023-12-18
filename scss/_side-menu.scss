@@ -75,10 +75,10 @@
     background-color: #3d404e;
     text-transform: uppercase;
     z-index: 100;
-    width: 275px;
+    width: 0;
     position: fixed;
     top: 0;
-    right: -275px;
+    right: 0px;
     transition: 0.5s ease;
     max-height: 100vh;
     overflow-y: auto;
@@ -137,28 +137,4 @@
     vertical-align: middle;
     padding-right: 15px;
     font-size: .5rem;
-}
-
-
-
-#shy-header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 97;
-    -webkit-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
-    background: #fff;
-}
-
-.is-watching {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-}
-
-#content {
-    z-index: 1;
-    padding-top: 215.42px;
 }
