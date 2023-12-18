@@ -23,14 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateSlide();
-    
-    if (currentSlide === totalSlides - 1) {
+    if (currentSlide < totalSlides - 1) {
+      currentSlide++;
+      updateSlide();
+    } else {
+      // Stop sliding on the seventh slide
       clearInterval(slideInterval);
-      setTimeout(function () {
-        slideInterval = setInterval(nextSlide, 5000);
-      }, 500); 
     }
   }
 
