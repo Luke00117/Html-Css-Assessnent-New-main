@@ -29,9 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentSlide === totalSlides - 1) {
       clearInterval(slideInterval);
       setTimeout(function () {
-        // Resume auto-scrolling after a delay
         slideInterval = setInterval(nextSlide, 5000);
-      }, 2000); // Adjust the delay time as needed
+      }, 500); 
     }
   }
 
@@ -48,12 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelectorAll('.manual-btn').forEach(function (btn, index) {
     btn.addEventListener('click', function () {
-      clearInterval(slideInterval); // Stop automatic sliding when manual button is clicked
+      clearInterval(slideInterval);
       goToSlide(index);
       setTimeout(function () {
-        // Resume auto-scrolling after a delay
         slideInterval = setInterval(nextSlide, 5000);
-      }, 2000); // Adjust the delay time as needed
+      }, 500);
     });
   });
 
