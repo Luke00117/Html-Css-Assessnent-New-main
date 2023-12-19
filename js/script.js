@@ -2,34 +2,45 @@
 // This code is for the sliding banner
 document.addEventListener("DOMContentLoaded", function () {
   var currentSlide = 0;
-  var totalSlides = document.querySelectorAll('.banner').length;
   var slideWidth;
   var slideInterval;
 
   function updateSlide() {
-    slideWidth = document.querySelector('.banner').clientWidth;
-    var transformValue = -currentSlide * slideWidth + 'px';
-    document.querySelector('.slides').style.transform = 'translateX(' + transformValue + ')';
-    updateActiveButton();
-  }
+  slideWidth = document.querySelector('.banner').clientWidth;
+  var transformValue = -currentSlide * slideWidth + 'px';
+  var slidesContainer = document.querySelector('.slides');
+  
+  slidesContainer.style.transition = 'transform 0.5s ease-in-out';
+  slidesContainer.style.transform = 'translateX(' + transformValue + ')';
+  
+  updateActiveButton();
+}
 
   function updateActiveButton() {
-    document.querySelectorAll('.manual-btn').forEach(function (btn, index) {
-      btn.classList.remove('active');
-      if (index === currentSlide) {
-        btn.classList.add('active');
-      }
-    });
-  }
+  var totalSlides = document.querySelectorAll('.manual-btn').length;
+  document.querySelectorAll('.manual-btn').forEach(function (btn, index) {
+    btn.classList.remove('active');
+    if (index === currentSlide % totalSlides) {
+      btn.classList.add('active');
+    }
+  });
+}
 
   function nextSlide() {
+    var totalSlides = document.querySelectorAll('.banner').length;
     if (currentSlide < totalSlides - 1) {
       currentSlide++;
-      updateSlide();
     } else {
-      // Stop sliding on the seventh slide
-      clearInterval(slideInterval);
+      var banners = document.querySelectorAll('.banner');
+      var clonedBanners = Array.from(banners).map(function (banner) {
+        return banner.cloneNode(true);
+      });
+      clonedBanners.forEach(function (clonedBanner) {
+        document.querySelector('.slides').appendChild(clonedBanner);
+      });
+      currentSlide++;
     }
+    updateSlide();
   }
 
   function goToSlide(index) {
@@ -60,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 //this function is for the hamburger button to toggle the sidebar
 
 function toggleSidebar() {
@@ -72,6 +82,9 @@ function toggleSidebar() {
 
   const overlay = document.querySelector('#overlay');
   overlay.classList.toggle('active2');
+
+  const shiftContent = document.getElementById("container");
+  shiftContent.classList.toggle("active2")
 
 
 }
@@ -102,3 +115,32 @@ const cookieAlert = document.querySelector(".cookie-container"),
 
 // function will be called on page load  
 window.addEventListener("load", executeCookie)
+
+
+
+// this code is for the sticky header
+
+let prevScrollPos = window.pageYOffset;
+let stickyHead = document.getElementById("topbar");
+
+function handleSlideOutUpEnd() {
+  stickyHead.classList.remove("sticky");
+  stickyHead.removeEventListener("animationend", handleSlideOutUpEnd);
+}
+
+window.addEventListener("scroll", function() {
+  let currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
+    stickyHead.classList.add("sticky", "slideInDown");
+    stickyHead.classList.remove("slideOutUp");
+  } else {
+    stickyHead.classList.remove("slideInDown");
+    stickyHead.classList.add("slideOutUp");
+
+    stickyHead.addEventListener("animationend", handleSlideOutUpEnd);
+  }
+
+
+  prevScrollPos = currentScrollPos;
+});

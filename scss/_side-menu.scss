@@ -75,13 +75,17 @@
     background-color: #3d404e;
     text-transform: uppercase;
     z-index: 100;
-    width: 0;
+    width: 275px;
     position: fixed;
     top: 0;
-    right: 0px;
-    transition: 0.5s ease;
+    right: -275px;
     max-height: 100vh;
     overflow-y: auto;
+    transition: right 0.3s ease;
+}
+
+#container.active2 {
+    margin-left: -275px;
 }
 
 .no-scroll {
@@ -94,7 +98,7 @@
 }
 
 .side-menu.active2 {
-    width: 275px;
+    right: 0;
     transition: .5s ease-in-out;
 }
 
@@ -104,7 +108,6 @@
 
 .side-menu-links li:not(:first-child) {
     display: block;
-    height: 52px;
     border-top: 1px solid rgba(0, 0, 0, .45);
     background-color: #262834;
     font-size: .875rem;

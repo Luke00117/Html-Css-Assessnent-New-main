@@ -34,6 +34,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   transition: all 0.5s;
+  transition: margin-left 0.3s ease;
 }
 
 #overlay {
@@ -751,21 +752,49 @@ input {
   border-color: #ce4125 transparent transparent;
 }
 
-#shy-header {
+#topbar {
+  display: none;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 97;
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
   background: #fff;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  transition: transform 0.5s ease;
 }
 
-.is-watching {
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
+#topbar.sticky {
+  display: block;
+  position: fixed;
+  top: 0;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  transition: transform 0.5s ease;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0%, 0);
+  }
+}
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+@keyframes slideOutUp {
+  from {
+    transform: translate3d(0, 0%, 0);
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+.slideOutUp {
+  animation-name: slideOutUp;
 }
 
 #content {
@@ -835,13 +864,17 @@ input {
   background-color: #3d404e;
   text-transform: uppercase;
   z-index: 100;
-  width: 0;
+  width: 275px;
   position: fixed;
   top: 0;
-  right: 0px;
-  transition: 0.5s ease;
+  right: -275px;
   max-height: 100vh;
   overflow-y: auto;
+  transition: right 0.3s ease;
+}
+
+#container.active2 {
+  margin-left: -275px;
 }
 
 .no-scroll {
@@ -853,7 +886,7 @@ input {
 }
 
 .side-menu.active2 {
-  width: 275px;
+  right: 0;
   transition: 0.5s ease-in-out;
 }
 
@@ -863,7 +896,6 @@ input {
 
 .side-menu-links li:not(:first-child) {
   display: block;
-  height: 52px;
   border-top: 1px solid rgba(0, 0, 0, 0.45);
   background-color: #262834;
   font-size: 0.875rem;
@@ -971,9 +1003,7 @@ input {
 .slides {
   display: flex;
   position: relative;
-  width: 700vw;
-  overflow: hidden;
-  transition: 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slides input {
@@ -1804,6 +1834,9 @@ footer .container {
 @media (min-width: 992px) {
   .side-menu.active2 {
     width: 350px;
+  }
+  #container.active2 {
+    margin-left: -350px;
   }
   .hidden-desktop {
     display: none;

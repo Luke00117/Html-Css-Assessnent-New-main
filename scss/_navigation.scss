@@ -302,21 +302,55 @@
 // ==========================================================================
 
 
-#shy-header {
+#topbar {
+    display: none;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 97;
-    -webkit-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
     background: #fff;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    transition: transform 0.5s ease;
 }
 
-.is-watching {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+#topbar.sticky {
+    display: block;
+    position: fixed;
+    top: 0;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    transition: transform 0.5s ease;
+}
+
+
+@keyframes slideInDown {
+    from {
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0%, 0);
+    }
+}
+
+.slideInDown {
+    animation-name: slideInDown;
+}
+
+
+@keyframes slideOutUp {
+    from {
+        transform: translate3d(0, 0%, 0);
+    }
+
+    to {
+        visibility: hidden;
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+.slideOutUp {
+    animation-name: slideOutUp;
 }
 
 #content {
