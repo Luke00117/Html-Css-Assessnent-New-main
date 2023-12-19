@@ -2,13 +2,13 @@
 // This code is for the sliding banner
 document.addEventListener("DOMContentLoaded", function () {
   var currentSlide = 0;
-  var totalSlides = document.querySelectorAll('.banner').length;
   var slideWidth;
   var slideInterval;
 
   function updateSlide() {
     slideWidth = document.querySelector('.banner').clientWidth;
     var transformValue = -currentSlide * slideWidth + 'px';
+    document.querySelector('.slides').style.transition = 'transform 0.5s ease-in-out';
     document.querySelector('.slides').style.transform = 'translateX(' + transformValue + ')';
     updateActiveButton();
   }
@@ -23,13 +23,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function nextSlide() {
+    var totalSlides = document.querySelectorAll('.banner').length;
     if (currentSlide < totalSlides - 1) {
       currentSlide++;
-      updateSlide();
     } else {
-      // Stop sliding on the seventh slide
-      clearInterval(slideInterval);
+      // Clone the banners and append them to the end
+      var banners = document.querySelectorAll('.banner');
+      var clonedBanners = Array.from(banners).map(function (banner) {
+        return banner.cloneNode(true);
+      });
+      clonedBanners.forEach(function (clonedBanner) {
+        document.querySelector('.slides').appendChild(clonedBanner);
+      });
+      currentSlide++;
     }
+    updateSlide();
   }
 
   function goToSlide(index) {
