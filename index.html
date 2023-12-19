@@ -28,546 +28,545 @@
 
         <div id="overlay" onclick="toggleSidebar()"></div>
 
-        <div id="shy-header">
-            <header>
-                <div class="container">
 
-                    <div class="search-box">
-                        <div class="header-flex">
-                            <div class="main-logo">
-                                <img src="./assets/images/logo.png" alt="netmatters logo">
-                            </div>
-                            <div class="search-functions">
-                                <div class="btn-container">
+        <header>
+            <div class="container">
 
-                                    <a href="#" class="searchbar-btn btn-support hidden-md">
-                                        <span class="icon-container">
-                                            <i class="fa-solid fa-computer-mouse"></i>
-                                        </span>
-                                        Support
-                                    </a>
-
-                                    <a href="#" class="searchbar-btn btn-contact hidden-md">
-                                        <span class="icon-container">
-                                            <i class="fa-regular fa-paper-plane"></i>
-                                        </span>
-                                        Contact
-                                    </a>
-                                </div>
-                                <div class="search-container hidden-sm">
-                                    <label for="search" class="hidden">Search:</label>
-                                    <input name="search" id="search" type="text" class="search-bar hidden-xl"
-                                        placeholder="Search...">
-                                    <label for="ipad-search" class="hidden">Search:</label>
-                                    <input name="ipad-search" id="ipad-search" type="text"
-                                        class="search-bar hidden-desktop" placeholder="Search...">
-                                    <a href="#" class="search-btn">
-                                        <span class="icon-box">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                        </span>
-                                    </a>
-                                </div>
-
-                                <span class="phone hidden-lg">
-                                    <i class="fa-solid fa-phone-volume"></i>
-                                </span>
-
-                                <div class="hamburger-box" onclick="toggleSidebar()">
-                                    <span class="hamburger">
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                    </span>
-                                </div>
-                            </div>
+                <div class="search-box">
+                    <div class="header-flex">
+                        <div class="main-logo">
+                            <img src="./assets/images/logo.png" alt="netmatters logo">
                         </div>
+                        <div class="search-functions">
+                            <div class="btn-container">
 
-                        <div class="hidden-lg search-bar-mobile">
-                            <form>
-                                <input name="search-mobile" id="mobile-search-bar" type="text" placeholder="Search...">
-                                <button type="submit" class="submit-btn">
+                                <a href="#" class="searchbar-btn btn-support hidden-md">
                                     <span class="icon-container">
+                                        <i class="fa-solid fa-computer-mouse"></i>
+                                    </span>
+                                    Support
+                                </a>
+
+                                <a href="#" class="searchbar-btn btn-contact hidden-md">
+                                    <span class="icon-container">
+                                        <i class="fa-regular fa-paper-plane"></i>
+                                    </span>
+                                    Contact
+                                </a>
+                            </div>
+                            <div class="search-container hidden-sm">
+                                <label for="search" class="hidden">Search:</label>
+                                <input name="search" id="search" type="text" class="search-bar hidden-xl"
+                                    placeholder="Search...">
+                                <label for="ipad-search" class="hidden">Search:</label>
+                                <input name="ipad-search" id="ipad-search" type="text" class="search-bar hidden-desktop"
+                                    placeholder="Search...">
+                                <a href="#" class="search-btn">
+                                    <span class="icon-box">
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                     </span>
-                                </button>
-                            </form>
+                                </a>
+                            </div>
+
+                            <span class="phone hidden-lg">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </span>
+
+                            <div class="hamburger-box" onclick="toggleSidebar()">
+                                <span class="hamburger">
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                </span>
+                            </div>
                         </div>
-
-
                     </div>
 
+                    <div class="hidden-lg search-bar-mobile">
+                        <form>
+                            <input name="search-mobile" id="mobile-search-bar" type="text" placeholder="Search...">
+                            <button type="submit" class="submit-btn">
+                                <span class="icon-container">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+
+
                 </div>
 
-            </header>
-
-
-            <div class="nav-container hidden-md">
-                <div class="container">
-                    <ul>
-                        <li class="nav-item item-1">
-
-                            <a href="#" class="display">
-                                <span class="main-nav-icon-container software-icon">
-                                    <i class="fa-solid fa-laptop"></i>
-                                </span>
-                                <small>Bespoke</small>
-                                Software
-                            </a>
-
-                            <div class="nav-menu-drop-down">
-
-                                <ul class="container drop-down-menu">
-
-                                    <li class="drop-down-title">Our Bespoke Software Services</li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-gears"></i>
-                                        </span>
-                                        <a href="#">Bespoke CRM</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-briefcase"></i>
-                                        </span>
-                                        <a href="#">Business Automation</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-shuffle"></i>
-                                        </span>
-                                        <a href="#">Software Integrations</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-mobile-screen-button"></i>
-                                        </span>
-                                        <a href="#">Mobile App Development</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-file"></i>
-                                        </span>
-                                        <a href="#">Bespoke Databases</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-right-left"></i>
-                                        </span>
-                                        <a href="#">Sharepoint Development</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-download"></i>
-                                        </span>
-                                        <a href="#">Operational Systems</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-users"></i>
-                                        </span>
-                                        <a href="#">Business Central Implementation</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-laptop"></i>
-                                        </span>
-                                        <a href="#">Internet of Things (IoT) Software</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-cloud"></i>
-                                        </span>
-                                        <a href="#">Intranet Development</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-cloud-arrow-down"></i>
-                                        </span>
-                                        <a href="#">Customer Portal Development</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-earth-oceania"></i>
-                                        </span>
-                                        <a href="#">Reporting Hub</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item item-2">
-
-                            <a href="#" class="display">
-                                <span class="main-nav-icon-container it-icon">
-                                    <i class="fa-solid fa-desktop"></i>
-                                </span>
-                                <small>It</small>
-                                Support
-                            </a>
-
-                            <div class="nav-menu-drop-down">
-
-                                <ul class="container drop-down-menu">
-
-                                    <li class="drop-down-title">Our IT Support Services</li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-headphones-simple"></i>
-                                        </span>
-                                        <a href="#">Managed IT Support</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-briefcase"></i>
-                                        </span>
-                                        <a href="#">Business IT Support</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-laptop"></i>
-                                        </span>
-                                        <a href="#">Office 365 for Business</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-graduation-cap"></i>
-                                        </span>
-                                        <a href="#">IT Consultancy</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-cloud"></i>
-                                        </span>
-                                        <a href="#">Cloud Service Provider</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-hard-drive"></i>
-                                        </span>
-                                        <a href="#">Data Backup & Disaster Recovery</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item item-3">
-
-                            <a href="#" class="display">
-                                <span class="main-nav-icon-container digital-icon">
-                                    <i class="fa-solid fa-chart-simple"></i>
-                                </span>
-                                <small>Digital</small>
-                                Marketing
-                            </a>
-                            <div class="nav-menu-drop-down">
-
-                                <ul class="container drop-down-menu">
-
-                                    <li class="drop-down-title">Our Digital Marketing Services</li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                        </span>
-                                        <a href="#">Search Engine Optimisation (SEO)</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-money-bill"></i>
-                                        </span>
-                                        <a href="#">Pay Per Click Advetising (PPC)</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-arrow-trend-up"></i>
-                                        </span>
-                                        <a href="#">Conversion Rate Optimisation (CRO)</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-envelope"></i>
-                                        </span>
-                                        <a href="#">Email Marketing</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-users"></i>
-                                        </span>
-                                        <a href="#">Social Media Marketing</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-pencil"></i>
-                                        </span>
-                                        <a href="#">Content Marketing</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                        </li>
-
-                        <li class="nav-item item-4">
-
-                            <a href="#" class="display">
-                                <span class="main-nav-icon-container telecoms-icon">
-                                    <i class="fa-solid fa-phone-volume"></i>
-                                </span>
-                                <small>Telecoms</small>
-                                Services
-                            </a>
-
-                            <div class="nav-menu-drop-down">
-
-                                <ul class="container drop-down-menu">
-
-                                    <li class="drop-down-title">Our Telecoms Services</li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-ticket"></i>
-                                        </span>
-                                        <a href="#">Business Mobile</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-phone"></i>
-                                        </span>
-                                        <a href="#">Hosted VoIP Provider</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-square-phone"></i>
-                                        </span>
-                                        <a href="#">Business VoIP Systems</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-gauge"></i>
-                                        </span>
-                                        <a href="#">Business Broadband</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-regular fa-handshake"></i>
-                                        </span>
-                                        <a href="#">Leased Lines Provider</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-phone-volume"></i>
-                                        </span>
-                                        <a href="#">3CX Systems</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item item-5">
-
-                            <a href="#" class="display">
-                                <span class="main-nav-icon-container web-icon">
-                                    <i class="fa-solid fa-code"></i>
-                                </span>
-                                <small>Web</small>
-                                Design
-                            </a>
-
-                            <div class="nav-menu-drop-down">
-
-                                <ul class="container drop-down-menu">
-
-                                    <li class="drop-down-title">Our Web Design Services</li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-pencil"></i>
-                                        </span>
-                                        <a href="#">Bespoke Website Design</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container"></span>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                        <a href="#">eCommerce Website Design</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-desktop"></i>
-                                        </span>
-                                        <a href="#">Pay Monthly Websites</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container"></span>
-                                        <i class="fa-solid fa-bullhorn"></i>
-                                        <a href="#">Branding & Design</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container"></span>
-                                        <i class="fa-solid fa-mobile-screen-button"></i>
-                                        <a href="#">Mobile App Development</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-cloud"></i>
-                                        </span>
-                                        <a href="#">Web Hosting</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                        </li>
-
-                        <li class="nav-item item-6">
-
-                            <a href="#" class="display">
-                                <span class="main-nav-icon-container cyber-icon">
-                                    <i class="fa-solid fa-shield-halved"></i>
-                                </span>
-                                <small>Cyber</small>
-                                Security
-                            </a>
-
-                            <div class="nav-menu-drop-down">
-
-                                <ul class="container drop-down-menu">
-
-                                    <li class="drop-down-title">Our Cyber Security Services</li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-paste"></i>
-                                        </span>
-                                        <a href="#">Cyber Security Assessment</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-clock"></i>
-                                        </span>
-                                        <a href="#">Cyber Security Management</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-flask"></i>
-                                        </span>
-                                        <a href="#">Cyber Penetration Testing</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container"><i
-                                                class="fa-solid fa-graduation-cap"></i></span>
-                                        <a href="#">Cyber Essentials Certification</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-shield-halved"></i>
-                                        </span>
-                                        <a href="#">Pci Compliance</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-lock"></i>
-                                        </span>
-                                        <a href="#">Hacking Prevention</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-item item-7">
-
-                            <a href="#" class="display">
-                                <span class="main-nav-icon-container developer-icon">
-                                    <i class="fa-solid fa-graduation-cap"></i>
-                                </span>
-                                <small>Developer</small>
-                                Course
-                            </a>
-
-                            <div class="nav-menu-drop-down">
-
-                                <ul class="container drop-down-menu">
-
-                                    <li class="drop-down-title">Our Developer Course Services</li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-laptop"></i>
-                                        </span>
-                                        <a href="#">Train For A Career In Tech</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-code"></i>
-                                        </span>
-                                        <a href="#">Skills Bootcamp</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-solid fa-circle-question"></i>
-                                        </span>
-                                        <a href="#">Scion Scheme Frequently Asked Questions</a>
-                                    </li>
-
-                                    <li class="drop-down-item">
-                                        <span class="nav-icon-container">
-                                            <i class="fa-regular fa-handshake"></i>
-                                        </span>
-                                        <a href="#">Scion Collaborators</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
             </div>
 
+        </header>
+
+
+        <div class="nav-container hidden-md">
+            <div class="container">
+                <ul>
+                    <li class="nav-item item-1">
+
+                        <a href="#" class="display">
+                            <span class="main-nav-icon-container software-icon">
+                                <i class="fa-solid fa-laptop"></i>
+                            </span>
+                            <small>Bespoke</small>
+                            Software
+                        </a>
+
+                        <div class="nav-menu-drop-down">
+
+                            <ul class="container drop-down-menu">
+
+                                <li class="drop-down-title">Our Bespoke Software Services</li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-gears"></i>
+                                    </span>
+                                    <a href="#">Bespoke CRM</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                    </span>
+                                    <a href="#">Business Automation</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                    </span>
+                                    <a href="#">Software Integrations</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                    </span>
+                                    <a href="#">Mobile App Development</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-file"></i>
+                                    </span>
+                                    <a href="#">Bespoke Databases</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-right-left"></i>
+                                    </span>
+                                    <a href="#">Sharepoint Development</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-download"></i>
+                                    </span>
+                                    <a href="#">Operational Systems</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-users"></i>
+                                    </span>
+                                    <a href="#">Business Central Implementation</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-laptop"></i>
+                                    </span>
+                                    <a href="#">Internet of Things (IoT) Software</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-cloud"></i>
+                                    </span>
+                                    <a href="#">Intranet Development</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                                    </span>
+                                    <a href="#">Customer Portal Development</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-earth-oceania"></i>
+                                    </span>
+                                    <a href="#">Reporting Hub</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item item-2">
+
+                        <a href="#" class="display">
+                            <span class="main-nav-icon-container it-icon">
+                                <i class="fa-solid fa-desktop"></i>
+                            </span>
+                            <small>It</small>
+                            Support
+                        </a>
+
+                        <div class="nav-menu-drop-down">
+
+                            <ul class="container drop-down-menu">
+
+                                <li class="drop-down-title">Our IT Support Services</li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-headphones-simple"></i>
+                                    </span>
+                                    <a href="#">Managed IT Support</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                    </span>
+                                    <a href="#">Business IT Support</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-laptop"></i>
+                                    </span>
+                                    <a href="#">Office 365 for Business</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </span>
+                                    <a href="#">IT Consultancy</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-cloud"></i>
+                                    </span>
+                                    <a href="#">Cloud Service Provider</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-hard-drive"></i>
+                                    </span>
+                                    <a href="#">Data Backup & Disaster Recovery</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item item-3">
+
+                        <a href="#" class="display">
+                            <span class="main-nav-icon-container digital-icon">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </span>
+                            <small>Digital</small>
+                            Marketing
+                        </a>
+                        <div class="nav-menu-drop-down">
+
+                            <ul class="container drop-down-menu">
+
+                                <li class="drop-down-title">Our Digital Marketing Services</li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </span>
+                                    <a href="#">Search Engine Optimisation (SEO)</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-money-bill"></i>
+                                    </span>
+                                    <a href="#">Pay Per Click Advetising (PPC)</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                    </span>
+                                    <a href="#">Conversion Rate Optimisation (CRO)</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </span>
+                                    <a href="#">Email Marketing</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-users"></i>
+                                    </span>
+                                    <a href="#">Social Media Marketing</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </span>
+                                    <a href="#">Content Marketing</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item item-4">
+
+                        <a href="#" class="display">
+                            <span class="main-nav-icon-container telecoms-icon">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </span>
+                            <small>Telecoms</small>
+                            Services
+                        </a>
+
+                        <div class="nav-menu-drop-down">
+
+                            <ul class="container drop-down-menu">
+
+                                <li class="drop-down-title">Our Telecoms Services</li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-ticket"></i>
+                                    </span>
+                                    <a href="#">Business Mobile</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </span>
+                                    <a href="#">Hosted VoIP Provider</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-square-phone"></i>
+                                    </span>
+                                    <a href="#">Business VoIP Systems</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-gauge"></i>
+                                    </span>
+                                    <a href="#">Business Broadband</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-regular fa-handshake"></i>
+                                    </span>
+                                    <a href="#">Leased Lines Provider</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </span>
+                                    <a href="#">3CX Systems</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item item-5">
+
+                        <a href="#" class="display">
+                            <span class="main-nav-icon-container web-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </span>
+                            <small>Web</small>
+                            Design
+                        </a>
+
+                        <div class="nav-menu-drop-down">
+
+                            <ul class="container drop-down-menu">
+
+                                <li class="drop-down-title">Our Web Design Services</li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-pencil"></i>
+                                    </span>
+                                    <a href="#">Bespoke Website Design</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container"></span>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#">eCommerce Website Design</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-desktop"></i>
+                                    </span>
+                                    <a href="#">Pay Monthly Websites</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container"></span>
+                                    <i class="fa-solid fa-bullhorn"></i>
+                                    <a href="#">Branding & Design</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container"></span>
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <a href="#">Mobile App Development</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-cloud"></i>
+                                    </span>
+                                    <a href="#">Web Hosting</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item item-6">
+
+                        <a href="#" class="display">
+                            <span class="main-nav-icon-container cyber-icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </span>
+                            <small>Cyber</small>
+                            Security
+                        </a>
+
+                        <div class="nav-menu-drop-down">
+
+                            <ul class="container drop-down-menu">
+
+                                <li class="drop-down-title">Our Cyber Security Services</li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-paste"></i>
+                                    </span>
+                                    <a href="#">Cyber Security Assessment</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </span>
+                                    <a href="#">Cyber Security Management</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-flask"></i>
+                                    </span>
+                                    <a href="#">Cyber Penetration Testing</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container"><i class="fa-solid fa-graduation-cap"></i></span>
+                                    <a href="#">Cyber Essentials Certification</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-shield-halved"></i>
+                                    </span>
+                                    <a href="#">Pci Compliance</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </span>
+                                    <a href="#">Hacking Prevention</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item item-7">
+
+                        <a href="#" class="display">
+                            <span class="main-nav-icon-container developer-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </span>
+                            <small>Developer</small>
+                            Course
+                        </a>
+
+                        <div class="nav-menu-drop-down">
+
+                            <ul class="container drop-down-menu">
+
+                                <li class="drop-down-title">Our Developer Course Services</li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-laptop"></i>
+                                    </span>
+                                    <a href="#">Train For A Career In Tech</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-code"></i>
+                                    </span>
+                                    <a href="#">Skills Bootcamp</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-solid fa-circle-question"></i>
+                                    </span>
+                                    <a href="#">Scion Scheme Frequently Asked Questions</a>
+                                </li>
+
+                                <li class="drop-down-item">
+                                    <span class="nav-icon-container">
+                                        <i class="fa-regular fa-handshake"></i>
+                                    </span>
+                                    <a href="#">Scion Collaborators</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
         </div>
+
+
 
         <div id="content">
 
@@ -1393,7 +1392,7 @@
                                     <h1>
                                         Telecoms Services
                                     </h1>
-                                    <p>A new approach to connectivity, <br> how we can help you business.</p>
+                                    <p>A new approach to connectivity, see <br> how we can help you business.</p>
                                     <div class="btn banner-btn telecoms-btn">
                                         <a href="#">
                                             Find Out More
@@ -1996,330 +1995,947 @@
                         </div>
                     </div>
 
-                <div class="client-image-container">
-                    <img src="./assets/images/clients/Bussy.png" class="greyscale" alt="Busseys Logo">
-                    <div class="hover-box">
-                        <h3>Busseys</h3>
-                        <p>One of the UK's leading ford dealerships</p>
-
-                    </div>
-
                     <div class="client-image-container">
-                        <img src="./assets/images/clients/crane-garden.png" class="greyscale"
-                            alt="Searles Leisure Resort">
+                        <img src="./assets/images/clients/Bussy.png" class="greyscale" alt="Busseys Logo">
                         <div class="hover-box">
-                            <h3>Crane Garden Buildings</h3>
-                            <p>Leading manufacturer and supplier of high-end-garden-rooms, summerhouses, workshops and
-                                sheds
-                                in the UK.</p>
+                            <h3>Busseys</h3>
+                            <p>One of the UK's leading ford dealerships</p>
+
                         </div>
-                    </div>
 
-                    <div class="client-image-container">
-                        <img src="./assets/images/clients/black-swan.png" class="greyscale"
-                            alt="Searles Leisure Resort">
-                        <div class="hover-box">
-                            <h3>Black Swan Care Groups</h3>
-                            <p>Black Swan Cae Group own and manage 21 high-qualiy care and residential homes with a
-                                focus on
-                                putting the needs of their residents first.
-                            </p>
-                            <a href="#" class="btn hover-btn btn-blue">View Our Case Study
-                                <span class="right-arrow">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="newsletter-container">
-
-                <div class="container">
-                    <div class="newsletter-signup">
-                        <h2 class="form-title">Email Newsletter Sign-Up</h2>
-
-                        <form autocomplete="on">
-
-                            <div class="form-input">
-
-                                <div class="input-box">
-                                    <label for="name">Your Name</label>
-                                    <input type="text" id="name" name="name" autocomplete="on">
-                                </div>
-
-
-                                <div class="input-box">
-                                    <label for="email">Your Email</label>
-                                    <input type="text" id="email" name="email" autocomplete="on">
-                                </div>
-
+                        <div class="client-image-container">
+                            <img src="./assets/images/clients/crane-garden.png" class="greyscale"
+                                alt="Searles Leisure Resort">
+                            <div class="hover-box">
+                                <h3>Crane Garden Buildings</h3>
+                                <p>Leading manufacturer and supplier of high-end-garden-rooms, summerhouses, workshops
+                                    and
+                                    sheds
+                                    in the UK.</p>
                             </div>
+                        </div>
 
-                            <div class="marketing-check">
-                                <span class="checkbox-fake">
-                                    <input type="checkbox" name="checkbox">
-                                </span>
-                                <p class="marketing-text">Please tick this box if you wish to recieve marketing
-                                    information
-                                    form
-                                    us.
-                                    Please see our <a href="#">Privacy Policy</a> for more information on how we keep
-                                    our
-                                    data
-                                    safe.
+                        <div class="client-image-container">
+                            <img src="./assets/images/clients/black-swan.png" class="greyscale"
+                                alt="Searles Leisure Resort">
+                            <div class="hover-box">
+                                <h3>Black Swan Care Groups</h3>
+                                <p>Black Swan Cae Group own and manage 21 high-qualiy care and residential homes with a
+                                    focus on
+                                    putting the needs of their residents first.
                                 </p>
+                                <a href="#" class="btn hover-btn btn-blue">View Our Case Study
+                                    <span class="right-arrow">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="newsletter-container">
+
+                    <div class="container">
+                        <div class="newsletter-signup">
+                            <h2 class="form-title">Email Newsletter Sign-Up</h2>
+
+                            <form autocomplete="on">
+
+                                <div class="form-input">
+
+                                    <div class="input-box">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" id="name" name="name" autocomplete="on">
+                                    </div>
+
+
+                                    <div class="input-box">
+                                        <label for="email">Your Email</label>
+                                        <input type="text" id="email" name="email" autocomplete="on">
+                                    </div>
+
+                                </div>
+
+                                <div class="marketing-check">
+                                    <span class="checkbox-fake">
+                                        <input type="checkbox" name="checkbox">
+                                    </span>
+                                    <p class="marketing-text">Please tick this box if you wish to recieve marketing
+                                        information
+                                        form
+                                        us.
+                                        Please see our <a href="#">Privacy Policy</a> for more information on how we
+                                        keep
+                                        our
+                                        data
+                                        safe.
+                                    </p>
+                                </div>
+
+                                <input class="btn btn-submit" type="submit" value="subscribe">
+
+
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <footer>
+
+                    <div class="container">
+                        <div class="social-block">
+
+                            <div class="logo-container">
+                                <img src="./assets/images/logo-white.png" alt="Netmatters Logo">
                             </div>
 
-                            <input class="btn btn-submit" type="submit" value="subscribe">
+                            <p class="follow">Follow Us On: </p>
+
+                            <div class="social-icon-box">
+                                <a href="#">
+                                    <span class="social-icon facebook-icon">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </span>
+                                </a>
+
+                                <a href="#">
+                                    <span class="social-icon linked-in-icon">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </span>
+                                </a>
+
+                                <a href="#">
+                                    <span class="social-icon twitter-icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </span>
+                                </a>
+
+                                <a href="#">
+                                    <span class="social-icon instagram-icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
 
 
-                        </form>
+                        <div class="links-container">
+                            <div class="footer-links-box">
+                                <h3 class="footer-links-title">About Netmatters</h3>
 
+                                <ul class="footer-links">
+
+
+                                    <li><a href="#">News</a></li>
+
+
+
+
+                                    <li><a href="#">Our Careers</a></li>
+
+
+
+                                    <li><a href="#">Our Team</a></li>
+
+
+
+                                    <li><a href="#">Contact Us</a></li>
+
+
+
+                                    <li><a href="#">Privacy Policy</a></li>
+
+
+
+                                    <li><a href="#">Cookie Policy</a></li>
+
+
+
+                                    <li><a href="#">Data Retention & Disposal Policy</a></li>
+
+
+
+                                    <li><a href="#">CCTV Policy</a></li>
+
+
+
+                                    <li><a href="#">Environmental Policy</a></li>
+
+
+
+                                    <li><a href="#">Terms & Conditions</a></li>
+
+
+                                </ul>
+                            </div>
+
+                            <div class="footer-links-box">
+                                <h3 class="footer-links-title">Our Services</h3>
+
+                                <ul class="footer-links">
+
+
+                                    <li><a href="#">Bespoke Software</a></li>
+
+
+
+                                    <li><a href="#">IT Support</a></li>
+
+
+
+                                    <li><a href="#">Digital Marketing</a></li>
+
+
+
+                                    <li><a href="#">Telecoms Services</a></li>
+
+
+
+                                    <li><a href="#">Web Design</a></li>
+
+
+
+                                    <li><a href="#">Cyber Security</a></li>
+
+
+
+                                    <li><a href="#">Developer Training</a></li>
+
+
+                                </ul>
+                            </div>
+
+                            <div class="footer-links-box">
+                                <h3 class="footer-links-title">Our Industries</h3>
+
+                                <ul class="footer-links">
+
+
+                                    <li><a href="#">Financial Services</a></li>
+
+
+
+                                    <li><a href="#">Construction</a></li>
+
+
+
+                                    <li><a href="#">Retail & E-Commerce</a></li>
+
+
+
+                                    <li><a href="#">Non-Profits</a></li>
+
+
+
+                                    <li><a href="#">SME's</a></li>
+
+
+
+                                    <li><a href="#">Healthcare</a></li>
+
+
+
+                                    <li><a href="#">Education & Training</a></li>
+
+
+
+                                    <li><a href="#">Travel & Leisure</a></li>
+
+
+                                </ul>
+                            </div>
+
+                            <div class="footer-links-box">
+                                <h3 class="footer-links-title">Locations</h3>
+
+                                <ul class="footer-links">
+
+
+                                    <li><a href="#">London Office</a></li>
+
+
+
+                                    <li><a href="#">Cambridge Office</a></li>
+
+
+
+                                    <li><a href="#">Wymondham Office</a></li>
+
+
+
+                                    <li><a href="#">Great Yarmouth Office</a></li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </footer>
+
+                <div class="sub-footer">
+                    <div class="container">
+                        <p>&copy; Copyright Netmatters 2023.</p>
+                        <p>All rights reserved.</p>
+                        <p class="hyphen">Sitemap</p>
                     </div>
                 </div>
 
+                <div class="cookie-container">
+                    <div class="cookie-box">
+                        <h3 class="cookie-title">Cookies Policy</h3>
+                        <div class="cookie-text">
+                            <p class="cookie-message">Our website uses cookies. This helps us provide you with a good
+                                experience
+                                on our website. To see what cookies we use and what they do, and to opt-in on
+                                non-essential
+                                cookies click "change settings". For a detailed explanation, click on <a
+                                    href="#">"Privacy
+                                    Policy"</a> otherwise click "Accept Cookies" to enter.</p>
+                        </div>
+                        <div class="button-box">
+                            <a href="#" class="btn cookie-btn">Change Settings</a>
+                            <a href="#" class="btn cookie-btn" id="accept-btn">Accept Cookies</a>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
 
-            <footer>
+            <div id="topbar">
+                <header>
+                    <div class="container">
 
-                <div class="container">
-                    <div class="social-block">
+                        <div class="search-box">
+                            <div class="header-flex">
+                                <div class="main-logo">
+                                    <img src="./assets/images/logo.png" alt="netmatters logo">
+                                </div>
+                                <div class="search-functions">
+                                    <div class="btn-container">
 
-                        <div class="logo-container">
-                            <img src="./assets/images/logo-white.png" alt="Netmatters Logo">
-                        </div>
+                                        <a href="#" class="searchbar-btn btn-support hidden-md">
+                                            <span class="icon-container">
+                                                <i class="fa-solid fa-computer-mouse"></i>
+                                            </span>
+                                            Support
+                                        </a>
 
-                        <p class="follow">Follow Us On: </p>
+                                        <a href="#" class="searchbar-btn btn-contact hidden-md">
+                                            <span class="icon-container">
+                                                <i class="fa-regular fa-paper-plane"></i>
+                                            </span>
+                                            Contact
+                                        </a>
+                                    </div>
+                                    <div class="search-container hidden-sm">
+                                        <label for="search" class="hidden">Search:</label>
+                                        <input name="search" id="search" type="text" class="search-bar hidden-xl"
+                                            placeholder="Search...">
+                                        <label for="ipad-search" class="hidden">Search:</label>
+                                        <input name="ipad-search" id="ipad-search" type="text"
+                                            class="search-bar hidden-desktop" placeholder="Search...">
+                                        <a href="#" class="search-btn">
+                                            <span class="icon-box">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </span>
+                                        </a>
+                                    </div>
 
-                        <div class="social-icon-box">
-                            <a href="#">
-                                <span class="social-icon facebook-icon">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </span>
-                            </a>
+                                    <span class="phone hidden-lg">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </span>
 
-                            <a href="#">
-                                <span class="social-icon linked-in-icon">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </span>
-                            </a>
+                                    <div class="hamburger-box" onclick="toggleSidebar()">
+                                        <span class="hamburger">
+                                            <span class="bar"></span>
+                                            <span class="bar"></span>
+                                            <span class="bar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
 
-                            <a href="#">
-                                <span class="social-icon twitter-icon">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </span>
-                            </a>
+                            <div class="hidden-lg search-bar-mobile">
+                                <form>
+                                    <input name="search-mobile" id="mobile-search-bar" type="text"
+                                        placeholder="Search...">
+                                    <button type="submit" class="submit-btn">
+                                        <span class="icon-container">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </span>
+                                    </button>
+                                </form>
+                            </div>
 
-                            <a href="#">
-                                <span class="social-icon instagram-icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </span>
-                            </a>
+
                         </div>
 
                     </div>
 
-
-                    <div class="links-container">
-                        <div class="footer-links-box">
-                            <h3 class="footer-links-title">About Netmatters</h3>
-
-                            <ul class="footer-links">
-
-
-                                <li><a href="#">News</a></li>
-
-
-
-
-                                <li><a href="#">Our Careers</a></li>
-
-
-
-                                <li><a href="#">Our Team</a></li>
-
-
-
-                                <li><a href="#">Contact Us</a></li>
-
-
-
-                                <li><a href="#">Privacy Policy</a></li>
-
-
-
-                                <li><a href="#">Cookie Policy</a></li>
-
-
-
-                                <li><a href="#">Data Retention & Disposal Policy</a></li>
-
-
-
-                                <li><a href="#">CCTV Policy</a></li>
-
-
-
-                                <li><a href="#">Environmental Policy</a></li>
-
-
-
-                                <li><a href="#">Terms & Conditions</a></li>
-
-
-                            </ul>
-                        </div>
-
-                        <div class="footer-links-box">
-                            <h3 class="footer-links-title">Our Services</h3>
-
-                            <ul class="footer-links">
-
-
-                                <li><a href="#">Bespoke Software</a></li>
-
-
-
-                                <li><a href="#">IT Support</a></li>
-
-
-
-                                <li><a href="#">Digital Marketing</a></li>
-
-
-
-                                <li><a href="#">Telecoms Services</a></li>
-
-
-
-                                <li><a href="#">Web Design</a></li>
-
-
-
-                                <li><a href="#">Cyber Security</a></li>
-
-
-
-                                <li><a href="#">Developer Training</a></li>
-
-
-                            </ul>
-                        </div>
-
-                        <div class="footer-links-box">
-                            <h3 class="footer-links-title">Our Industries</h3>
-
-                            <ul class="footer-links">
-
-
-                                <li><a href="#">Financial Services</a></li>
-
-
-
-                                <li><a href="#">Construction</a></li>
-
-
-
-                                <li><a href="#">Retail & E-Commerce</a></li>
-
-
-
-                                <li><a href="#">Non-Profits</a></li>
-
-
-
-                                <li><a href="#">SME's</a></li>
-
-
-
-                                <li><a href="#">Healthcare</a></li>
-
-
-
-                                <li><a href="#">Education & Training</a></li>
-
-
-
-                                <li><a href="#">Travel & Leisure</a></li>
-
-
-                            </ul>
-                        </div>
-
-                        <div class="footer-links-box">
-                            <h3 class="footer-links-title">Locations</h3>
-
-                            <ul class="footer-links">
-
-
-                                <li><a href="#">London Office</a></li>
-
-
-
-                                <li><a href="#">Cambridge Office</a></li>
-
-
-
-                                <li><a href="#">Wymondham Office</a></li>
-
-
-
-                                <li><a href="#">Great Yarmouth Office</a></li>
-
-
-                            </ul>
-                        </div>
+                </header>
+
+
+                <div class="nav-container hidden-md">
+                    <div class="container">
+                        <ul>
+                            <li class="nav-item item-1">
+
+                                <a href="#" class="display">
+                                    <span class="main-nav-icon-container software-icon">
+                                        <i class="fa-solid fa-laptop"></i>
+                                    </span>
+                                    <small>Bespoke</small>
+                                    Software
+                                </a>
+
+                                <div class="nav-menu-drop-down">
+
+                                    <ul class="container drop-down-menu">
+
+                                        <li class="drop-down-title">Our Bespoke Software Services</li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-gears"></i>
+                                            </span>
+                                            <a href="#">Bespoke CRM</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-briefcase"></i>
+                                            </span>
+                                            <a href="#">Business Automation</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-shuffle"></i>
+                                            </span>
+                                            <a href="#">Software Integrations</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                            </span>
+                                            <a href="#">Mobile App Development</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-file"></i>
+                                            </span>
+                                            <a href="#">Bespoke Databases</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-right-left"></i>
+                                            </span>
+                                            <a href="#">Sharepoint Development</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-download"></i>
+                                            </span>
+                                            <a href="#">Operational Systems</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-users"></i>
+                                            </span>
+                                            <a href="#">Business Central Implementation</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-laptop"></i>
+                                            </span>
+                                            <a href="#">Internet of Things (IoT) Software</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-cloud"></i>
+                                            </span>
+                                            <a href="#">Intranet Development</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-cloud-arrow-down"></i>
+                                            </span>
+                                            <a href="#">Customer Portal Development</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-earth-oceania"></i>
+                                            </span>
+                                            <a href="#">Reporting Hub</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item item-2">
+
+                                <a href="#" class="display">
+                                    <span class="main-nav-icon-container it-icon">
+                                        <i class="fa-solid fa-desktop"></i>
+                                    </span>
+                                    <small>It</small>
+                                    Support
+                                </a>
+
+                                <div class="nav-menu-drop-down">
+
+                                    <ul class="container drop-down-menu">
+
+                                        <li class="drop-down-title">Our IT Support Services</li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-headphones-simple"></i>
+                                            </span>
+                                            <a href="#">Managed IT Support</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-briefcase"></i>
+                                            </span>
+                                            <a href="#">Business IT Support</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-laptop"></i>
+                                            </span>
+                                            <a href="#">Office 365 for Business</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-graduation-cap"></i>
+                                            </span>
+                                            <a href="#">IT Consultancy</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-cloud"></i>
+                                            </span>
+                                            <a href="#">Cloud Service Provider</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-hard-drive"></i>
+                                            </span>
+                                            <a href="#">Data Backup & Disaster Recovery</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item item-3">
+
+                                <a href="#" class="display">
+                                    <span class="main-nav-icon-container digital-icon">
+                                        <i class="fa-solid fa-chart-simple"></i>
+                                    </span>
+                                    <small>Digital</small>
+                                    Marketing
+                                </a>
+                                <div class="nav-menu-drop-down">
+
+                                    <ul class="container drop-down-menu">
+
+                                        <li class="drop-down-title">Our Digital Marketing Services</li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </span>
+                                            <a href="#">Search Engine Optimisation (SEO)</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-money-bill"></i>
+                                            </span>
+                                            <a href="#">Pay Per Click Advetising (PPC)</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                            </span>
+                                            <a href="#">Conversion Rate Optimisation (CRO)</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-envelope"></i>
+                                            </span>
+                                            <a href="#">Email Marketing</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-users"></i>
+                                            </span>
+                                            <a href="#">Social Media Marketing</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-pencil"></i>
+                                            </span>
+                                            <a href="#">Content Marketing</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li class="nav-item item-4">
+
+                                <a href="#" class="display">
+                                    <span class="main-nav-icon-container telecoms-icon">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </span>
+                                    <small>Telecoms</small>
+                                    Services
+                                </a>
+
+                                <div class="nav-menu-drop-down">
+
+                                    <ul class="container drop-down-menu">
+
+                                        <li class="drop-down-title">Our Telecoms Services</li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-ticket"></i>
+                                            </span>
+                                            <a href="#">Business Mobile</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-phone"></i>
+                                            </span>
+                                            <a href="#">Hosted VoIP Provider</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-square-phone"></i>
+                                            </span>
+                                            <a href="#">Business VoIP Systems</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-gauge"></i>
+                                            </span>
+                                            <a href="#">Business Broadband</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-regular fa-handshake"></i>
+                                            </span>
+                                            <a href="#">Leased Lines Provider</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-phone-volume"></i>
+                                            </span>
+                                            <a href="#">3CX Systems</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item item-5">
+
+                                <a href="#" class="display">
+                                    <span class="main-nav-icon-container web-icon">
+                                        <i class="fa-solid fa-code"></i>
+                                    </span>
+                                    <small>Web</small>
+                                    Design
+                                </a>
+
+                                <div class="nav-menu-drop-down">
+
+                                    <ul class="container drop-down-menu">
+
+                                        <li class="drop-down-title">Our Web Design Services</li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-pencil"></i>
+                                            </span>
+                                            <a href="#">Bespoke Website Design</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container"></span>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <a href="#">eCommerce Website Design</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-desktop"></i>
+                                            </span>
+                                            <a href="#">Pay Monthly Websites</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container"></span>
+                                            <i class="fa-solid fa-bullhorn"></i>
+                                            <a href="#">Branding & Design</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container"></span>
+                                            <i class="fa-solid fa-mobile-screen-button"></i>
+                                            <a href="#">Mobile App Development</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-cloud"></i>
+                                            </span>
+                                            <a href="#">Web Hosting</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                            <li class="nav-item item-6">
+
+                                <a href="#" class="display">
+                                    <span class="main-nav-icon-container cyber-icon">
+                                        <i class="fa-solid fa-shield-halved"></i>
+                                    </span>
+                                    <small>Cyber</small>
+                                    Security
+                                </a>
+
+                                <div class="nav-menu-drop-down">
+
+                                    <ul class="container drop-down-menu">
+
+                                        <li class="drop-down-title">Our Cyber Security Services</li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-paste"></i>
+                                            </span>
+                                            <a href="#">Cyber Security Assessment</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-clock"></i>
+                                            </span>
+                                            <a href="#">Cyber Security Management</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-flask"></i>
+                                            </span>
+                                            <a href="#">Cyber Penetration Testing</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container"><i
+                                                    class="fa-solid fa-graduation-cap"></i></span>
+                                            <a href="#">Cyber Essentials Certification</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-shield-halved"></i>
+                                            </span>
+                                            <a href="#">Pci Compliance</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-lock"></i>
+                                            </span>
+                                            <a href="#">Hacking Prevention</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item item-7">
+
+                                <a href="#" class="display">
+                                    <span class="main-nav-icon-container developer-icon">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </span>
+                                    <small>Developer</small>
+                                    Course
+                                </a>
+
+                                <div class="nav-menu-drop-down">
+
+                                    <ul class="container drop-down-menu">
+
+                                        <li class="drop-down-title">Our Developer Course Services</li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-laptop"></i>
+                                            </span>
+                                            <a href="#">Train For A Career In Tech</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-code"></i>
+                                            </span>
+                                            <a href="#">Skills Bootcamp</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-solid fa-circle-question"></i>
+                                            </span>
+                                            <a href="#">Scion Scheme Frequently Asked Questions</a>
+                                        </li>
+
+                                        <li class="drop-down-item">
+                                            <span class="nav-icon-container">
+                                                <i class="fa-regular fa-handshake"></i>
+                                            </span>
+                                            <a href="#">Scion Collaborators</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
                     </div>
-
-
-
                 </div>
 
-            </footer>
-
-            <div class="sub-footer">
-                <div class="container">
-                    <p>&copy; Copyright Netmatters 2023.</p>
-                    <p>All rights reserved.</p>
-                    <p class="hyphen">Sitemap</p>
-                </div>
             </div>
 
-            <div class="cookie-container">
-                <div class="cookie-box">
-                    <h3 class="cookie-title">Cookies Policy</h3>
-                    <div class="cookie-text">
-                        <p class="cookie-message">Our website uses cookies. This helps us provide you with a good
-                            experience
-                            on our website. To see what cookies we use and what they do, and to opt-in on non-essential
-                            cookies click "change settings". For a detailed explanation, click on <a href="#">"Privacy
-                                Policy"</a> otherwise click "Accept Cookies" to enter.</p>
-                    </div>
-                    <div class="button-box">
-                        <a href="#" class="btn cookie-btn">Change Settings</a>
-                        <a href="#" class="btn cookie-btn" id="accept-btn">Accept Cookies</a>
-                    </div>
-
-                </div>
-            </div>
 
         </div>
 
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/script.js"></script>
+        <!-- <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const slidesContainer = document.querySelector('.slides');
+                const originalSlides = document.querySelectorAll('.banner');
+                const totalSlides = originalSlides.length;
+                const cloneCount = 2; // You can adjust the number of clones as needed
+
+                // Clone slides and append them
+                for (let i = 0; i < cloneCount; i++) {
+                    originalSlides.forEach((slide) => {
+                        const clone = slide.cloneNode(true);
+                        slidesContainer.appendChild(clone);
+                    });
+                }
+
+                let currentSlide = 0;
+
+                function showSlide(index) {
+                    // Hide all slides
+                    originalSlides.forEach((slide) => {
+                        slide.style.display = 'none';
+                    });
+
+                    // Show the selected slide
+                    originalSlides[index].style.display = 'block';
+                }
+
+                function updateNavigation() {
+                    // Update the active state of auto navigation buttons
+                    const autoNavButtons = document.querySelectorAll('.auto-btn');
+                    autoNavButtons.forEach((button, index) => {
+                        button.classList.toggle('active', index === currentSlide % totalSlides);
+                    });
+
+                    // Update the active state of manual navigation buttons
+                    const manualNavButtons = document.querySelectorAll('.manual-btn');
+                    manualNavButtons.forEach((button, index) => {
+                        button.classList.toggle('active', index === currentSlide % totalSlides);
+                    });
+                }
+
+                function nextSlide() {
+                    currentSlide++;
+                    showSlide(currentSlide % totalSlides);
+                    updateNavigation();
+                }
+
+                // Set up interval to auto-advance the carousel
+                const interval = setInterval(nextSlide, 5000); // Adjust the interval as needed
+
+                // Stop the interval on manual navigation
+                const autoNavButtons = document.querySelectorAll('.auto-btn');
+                autoNavButtons.forEach((button, index) => {
+                    button.addEventListener('click', function () {
+                        clearInterval(interval);
+                        currentSlide = index * totalSlides;
+                        showSlide(currentSlide % totalSlides);
+                        updateNavigation();
+                    });
+                });
+
+                // Manual navigation buttons
+                const manualNavButtons = document.querySelectorAll('.manual-btn');
+                manualNavButtons.forEach((button, index) => {
+                    button.addEventListener('click', function () {
+                        clearInterval(interval);
+                        currentSlide = index;
+                        showSlide(currentSlide % totalSlides);
+                        updateNavigation();
+                    });
+                });
+            });
+        </script> -->
 
 
-    </div>
 
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/jquery.shyheader.js"></script>
-
-
-
-    </script>
+        </script>
 
 
 </body>

@@ -102,3 +102,32 @@ const cookieAlert = document.querySelector(".cookie-container"),
 
 // function will be called on page load  
 window.addEventListener("load", executeCookie)
+
+
+
+// this code is for the sticky header
+
+let prevScrollPos = window.pageYOffset;
+let stickyHead = document.getElementById("topbar");
+
+function handleSlideOutUpEnd() {
+  stickyHead.classList.remove("sticky");
+  stickyHead.removeEventListener("animationend", handleSlideOutUpEnd);
+}
+
+window.addEventListener("scroll", function() {
+  let currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
+    stickyHead.classList.add("sticky", "slideInDown");
+    stickyHead.classList.remove("slideOutUp");
+  } else {
+    stickyHead.classList.remove("slideInDown");
+    stickyHead.classList.add("slideOutUp");
+
+    stickyHead.addEventListener("animationend", handleSlideOutUpEnd);
+  }
+
+
+  prevScrollPos = currentScrollPos;
+});
