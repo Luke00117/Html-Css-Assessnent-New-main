@@ -52,12 +52,12 @@
     margin-left: 20px;
 }
 
-#ipad-search:focus {
+.ipad-search:focus {
     outline: none;
 }
 
 .search-bar:focus,
-#ipad-search:focus,
+.ipad-search:focus,
 .newsletter-signup .form-input input:focus {
     outline: none;
     border-color: #5bc0de;
