@@ -6,28 +6,31 @@ document.addEventListener("DOMContentLoaded", function () {
   var slideInterval;
 
   function updateSlide() {
-    slideWidth = document.querySelector('.banner').clientWidth;
-    var transformValue = -currentSlide * slideWidth + 'px';
-    document.querySelector('.slides').style.transition = 'transform 0.5s ease-in-out';
-    document.querySelector('.slides').style.transform = 'translateX(' + transformValue + ')';
-    updateActiveButton();
-  }
+  slideWidth = document.querySelector('.banner').clientWidth;
+  var transformValue = -currentSlide * slideWidth + 'px';
+  var slidesContainer = document.querySelector('.slides');
+  
+  slidesContainer.style.transition = 'transform 0.5s ease-in-out';
+  slidesContainer.style.transform = 'translateX(' + transformValue + ')';
+  
+  updateActiveButton();
+}
 
   function updateActiveButton() {
-    document.querySelectorAll('.manual-btn').forEach(function (btn, index) {
-      btn.classList.remove('active');
-      if (index === currentSlide) {
-        btn.classList.add('active');
-      }
-    });
-  }
+  var totalSlides = document.querySelectorAll('.manual-btn').length;
+  document.querySelectorAll('.manual-btn').forEach(function (btn, index) {
+    btn.classList.remove('active');
+    if (index === currentSlide % totalSlides) {
+      btn.classList.add('active');
+    }
+  });
+}
 
   function nextSlide() {
     var totalSlides = document.querySelectorAll('.banner').length;
     if (currentSlide < totalSlides - 1) {
       currentSlide++;
     } else {
-      // Clone the banners and append them to the end
       var banners = document.querySelectorAll('.banner');
       var clonedBanners = Array.from(banners).map(function (banner) {
         return banner.cloneNode(true);
@@ -68,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 //this function is for the hamburger button to toggle the sidebar
 
 function toggleSidebar() {
@@ -80,6 +82,9 @@ function toggleSidebar() {
 
   const overlay = document.querySelector('#overlay');
   overlay.classList.toggle('active2');
+
+  const shiftContent = document.getElementById("container");
+  shiftContent.classList.toggle("active2")
 
 
 }
