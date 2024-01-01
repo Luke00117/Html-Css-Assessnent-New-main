@@ -865,7 +865,6 @@ input {
 .side-menu {
   background-color: #3d404e;
   text-transform: uppercase;
-  z-index: -1;
   width: 275px;
   position: fixed;
   top: 0;
@@ -890,7 +889,6 @@ input {
 }
 
 .side-menu.active2 {
-  z-index: 11;
   overflow-y: auto;
 }
 
