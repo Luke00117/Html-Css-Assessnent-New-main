@@ -74,18 +74,21 @@
 .side-menu {
     background-color: #3d404e;
     text-transform: uppercase;
-    z-index: 100;
+    z-index: -1;
     width: 275px;
     position: fixed;
     top: 0;
-    right: -275px;
+    right: 0px;
     max-height: 100vh;
     overflow-y: auto;
     transition: right 0.3s ease;
 }
 
 #container.active2 {
-    margin-left: -275px;
+    z-index: 111;
+    position: relative;
+    left: -275px;
+    transition: all .5s ease;
 }
 
 .no-scroll {
@@ -124,6 +127,7 @@
     display: block;
     height: 58px;
     align-items: center;
+    background-color: #333645;
     border-top: 1px solid hsla(0, 0%, 100%, .05);
 }
 
@@ -140,4 +144,8 @@
     vertical-align: middle;
     padding-right: 15px;
     font-size: .5rem;
+}
+
+.side-menu-links:hover .side-menu-title {
+    background-color: hsla(0, 0%, 100%, .05);
 }
